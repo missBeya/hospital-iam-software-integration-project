@@ -293,13 +293,52 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-architecture" class="md-nav__link">
+  <a href="#what-you-will-build" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project Architecture
+        What You Will Build
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-learn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Will Learn
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning Path
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Learning Path">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-1-build-the-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Part 1 — Build the Environment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -921,13 +960,52 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-architecture" class="md-nav__link">
+  <a href="#what-you-will-build" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project Architecture
+        What You Will Build
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-will-learn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Will Learn
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning Path
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Learning Path">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-1-build-the-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Part 1 — Build the Environment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -960,40 +1038,194 @@
 
 
 <h1 id="hospital-identity-access-integration-project">Hospital Identity &amp; Access Integration Project</h1>
-<p>Welcome to a beginner-friendly, hands-on project for learning how enterprise systems integrate inside a simulated hospital environment.</p>
+<p><strong>Build it. Break it. Troubleshoot it. Understand it.</strong></p>
+<p>Welcome to a beginner-friendly, hands-on project where you will build a small simulated hospital IT environment and gradually integrate a new software application into it.</p>
+<div class="admonition note">
+<p class="admonition-title">Safe learning environment</p>
+<p>This project uses fictional users and simulated infrastructure.
+No real hospital systems, patient data, or production credentials are used.</p>
+</div>
+<hr />
 <h2 id="your-mission">Your Mission</h2>
-<p>You are helping a fictional hospital build its identity infrastructure and integrate a new software application into the environment.</p>
-<p>Throughout the project, you will work with:</p>
+<p>Imagine you have joined the technical implementation team of a hospital.</p>
+<p>The hospital needs an identity infrastructure that can:</p>
 <ul>
-<li>VMware and virtual machines</li>
-<li>Windows Server 2022</li>
-<li>Active Directory</li>
-<li>DNS and networking</li>
-<li>Identity and Access Management</li>
-<li>SMB and file permissions</li>
-<li>Ubuntu Linux</li>
-<li>LDAP</li>
-<li>PowerShell</li>
-<li>Software integration</li>
-<li>Troubleshooting</li>
+<li>manage doctors, nurses, pharmacy staff, and IT users</li>
+<li>authenticate employees</li>
+<li>control access to resources</li>
+<li>support a new software application</li>
+<li>integrate with existing identity systems</li>
+<li>be troubleshot when something goes wrong</li>
 </ul>
-<h2 id="project-architecture">Project Architecture</h2>
-<p>```text
-Mac Host
+<p>You will build that environment step by step.</p>
+<hr />
+<h2 id="what-you-will-build">What You Will Build</h2>
+<div class="highlight"><pre><span></span><code>Mac Host
    │
    └── VMware Fusion
         │
         ├── Windows Server 2022
+        │      │
         │      ├── Active Directory
         │      ├── DNS
-        │      ├── Users &amp; Groups
-        │      └── Access Management
+        │      ├── Users &amp; OUs
+        │      ├── Security Groups
+        │      └── SMB Access Control
         │
-        └── Ubuntu
+        └── Ubuntu Integration VM
                │
                ├── Network Testing
+               ├── DNS Queries
                ├── LDAP
-               └── Software Integration</p>
+               └── New Software Integration
+</code></pre></div>
+<p>The environment will become more advanced as the project progresses.</p>
+<hr />
+<h2 id="what-you-will-learn">What You Will Learn</h2>
+<p>By working through the project, you will gain hands-on experience with:</p>
+<ul>
+<li>Virtual Machines and VMware</li>
+<li>Windows Server 2022</li>
+<li>Active Directory Domain Services</li>
+<li>DNS and IP networking</li>
+<li>Identity and Access Management</li>
+<li>Authentication vs Authorization</li>
+<li>Organizational Units and Security Groups</li>
+<li>SMB and NTFS permissions</li>
+<li>Ubuntu Linux</li>
+<li>LDAP</li>
+<li>Service accounts</li>
+<li>PowerShell</li>
+<li>Troubleshooting</li>
+<li>Enterprise software integration</li>
+</ul>
+<hr />
+<h2 id="learning-path">Learning Path</h2>
+<h3 id="part-1-build-the-environment">Part 1 — Build the Environment</h3>
+<p><strong>01. VMware Setup</strong><br />
+Create the virtual machines that
+source .venv/bin/activate
+mkdocs serve
+cat &gt; docs/index.md &lt;&lt;'EOF'</p>
+<h1 id="hospital-identity-access-integration-project_1">Hospital Identity &amp; Access Integration Project</h1>
+<p><strong>Build it. Break it. Troubleshoot it. Understand it.</strong></p>
+<p>Welcome to a beginner-friendly, hands-on project where you will build a small simulated hospital IT environment and gradually integrate a new software application into it.</p>
+<div class="admonition note">
+<p class="admonition-title">Safe learning environment</p>
+<p>This project uses fictional users and simulated infrastructure.
+No real hospital systems, patient data, or production credentials are used.</p>
+</div>
+<hr />
+<h2 id="your-mission_1">Your Mission</h2>
+<p>Imagine you have joined the technical implementation team of a hospital.</p>
+<p>The hospital needs an identity infrastructure that can:</p>
+<ul>
+<li>manage doctors, nurses, pharmacy staff, and IT users</li>
+<li>authenticate employees</li>
+<li>control access to resources</li>
+<li>support a new software application</li>
+<li>integrate with existing identity systems</li>
+<li>be troubleshot when something goes wrong</li>
+</ul>
+<p>You will build that environment step by step.</p>
+<hr />
+<h2 id="what-you-will-build_1">What You Will Build</h2>
+<div class="highlight"><pre><span></span><code>Mac Host
+   │
+   └── VMware Fusion
+        │
+        ├── Windows Server 2022
+        │      │
+        │      ├── Active Directory
+        │      ├── DNS
+        │      ├── Users &amp; OUs
+        │      ├── Security Groups
+        │      └── SMB Access Control
+        │
+        └── Ubuntu Integration VM
+               │
+               ├── Network Testing
+               ├── DNS Queries
+               ├── LDAP
+               └── New Software Integration
+</code></pre></div>
+<p>The environment will become more advanced as the project progresses.</p>
+<hr />
+<h2 id="what-you-will-learn_1">What You Will Learn</h2>
+<p>By working through the project, you will gain hands-on experience with:</p>
+<ul>
+<li>Virtual Machines and VMware</li>
+<li>Windows Server 2022</li>
+<li>Active Directory Domain Services</li>
+<li>DNS and IP networking</li>
+<li>Identity and Access Management</li>
+<li>Authentication vs Authorization</li>
+<li>Organizational Units and Security Groups</li>
+<li>SMB and NTFS permissions</li>
+<li>Ubuntu Linux</li>
+<li>LDAP</li>
+<li>Service accounts</li>
+<li>PowerShell</li>
+<li>Troubleshooting</li>
+<li>Enterprise software integration</li>
+</ul>
+<hr />
+<h2 id="learning-path_1">Learning Path</h2>
+<h3 id="part-1-build-the-environment_1">Part 1 — Build the Environment</h3>
+<p><strong>01. VMware Setup</strong><br />
+Create the virtual machines that will form the hospital environment.</p>
+<p><strong>02. Windows Server</strong><br />
+Prepare the Windows Server that will become our Domain Controller.</p>
+<p><strong>03. Networking</strong><br />
+Configure IP addressing, DNS, connectivity, and time synchronization.</p>
+<h3 id="part-2-identity-access">Part 2 — Identity &amp; Access</h3>
+<p><strong>04. Active Directory</strong><br />
+Build the <code>hospital.local</code> domain and create the hospital identity structure.</p>
+<p><strong>05. Access Management</strong><br />
+Create users, Security Groups, and test authorization.</p>
+<p><strong>06. SMB &amp; Permissions</strong><br />
+Protect hospital resources using group-based access control.</p>
+<h3 id="part-3-integration">Part 3 — Integration</h3>
+<p><strong>07. Ubuntu Integration Machine</strong><br />
+Introduce a second operating system into the hospital environment.</p>
+<p><strong>08. LDAP Integration</strong><br />
+Allow an external system to query identities from Active Directory.</p>
+<h3 id="coming-next">Coming Next</h3>
+<p>The project will later expand into:</p>
+<ul>
+<li>application-level integration</li>
+<li>SQL and database integration</li>
+<li>PowerShell automation</li>
+<li>provisioning and deprovisioning</li>
+<li>LDAPS / TLS</li>
+<li>client workstations</li>
+<li>troubleshooting challenges</li>
+</ul>
+<hr />
+<h2 id="how-this-project-teaches">How This Project Teaches</h2>
+<p>This is not a "copy commands and hope they work" tutorial.</p>
+<p>For each stage, we will ask:</p>
+<ol>
+<li><strong>What are we building?</strong></li>
+<li><strong>Why is it needed?</strong></li>
+<li><strong>How do we configure it?</strong></li>
+<li><strong>How do we verify it?</strong></li>
+<li><strong>What could go wrong?</strong></li>
+<li><strong>What did we learn?</strong></li>
+</ol>
+<p>Real mistakes encountered while building the environment are kept as troubleshooting exercises.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>We configured an SMB clinical folder for nurses.</p>
+<p>Emma was a member of <code>GG-Nurses</code> and could access the resource.</p>
+<p>Marie had a valid Active Directory account but was not a member of the group, so access was denied.</p>
+<p>This demonstrated the difference between <strong>authentication</strong> and <strong>authorization</strong>.</p>
+</div>
+<hr />
+<h2 id="ready">Ready?</h2>
+<p><a class="md-button md-button--primary" href="01-vmware-setup/">Start with VMware Setup →</a></p>
+<hr />
+<p><strong>Project status:</strong> Work in progress</p>
 
 
 
