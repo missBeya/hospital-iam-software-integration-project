@@ -1,5 +1,7 @@
 # Hospital Identity & Access Integration Project
 
+**Live learning site:** [Open the guided documentation](https://missbeya.github.io/hospital-iam-software-integration-project/)
+
 A beginner-friendly hands-on project that simulates a hospital IT environment to explore identity management, access control, networking, Windows Server, Active Directory, Linux integration, LDAP, PowerShell, and troubleshooting.
 
 > This is a simulated learning environment. No real hospital systems or patient data are used.
