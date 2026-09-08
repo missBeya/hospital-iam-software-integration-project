@@ -1,0 +1,44 @@
+site_name: Hospital Identity & Access Integration Project
+site_description: A beginner-friendly simulated hospital infrastructure and software integration project.
+site_url: https://missbeya.github.io/hospital-iam-software-integration-project/
+
+repo_name: missBeya/hospital-iam-software-integration-project
+repo_url: https://github.com/missBeya/hospital-iam-software-integration-project
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.view
+
+nav:
+  - Home: index.md
+
+  - Build the Environment:
+      - 01 - VMware Setup: 01-vmware-setup.md
+      - 02 - Windows Server: 02-windows-server.md
+      - 03 - Networking: 03-networking.md
+
+  - Identity & Access:
+      - 04 - Active Directory: 04-active-directory.md
+      - 05 - Access Management: 05-access-management.md
+      - 06 - SMB & Permissions: 06-smb.md
+
+  - Integration:
+      - 07 - Ubuntu: 07-ubuntu.md
+      - 08 - LDAP Integration: 08-ldap-integration.md
+
+  - Troubleshooting:
+      - Time Synchronisation: troubleshooting/time-sync.md
+      - Password Policy: troubleshooting/password-policy.md
+      - SMB Path Errors: troubleshooting/smb-path-error.md
+      - LDAP Bind Errors: troubleshooting/ldap-bind-error.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+
