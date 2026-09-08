@@ -17,7 +17,7 @@ nav:
   - Home: index.md
 
   - Build the Environment:
-      - 01 - VMware Setup: 01-vmware-setup.md
+      - 01 - Virtualisation Setup: 01-virtualisation-setup.md
       - 02 - Windows Server: 02-windows-server.md
       - 03 - Networking: 03-networking.md
 
