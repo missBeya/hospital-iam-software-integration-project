@@ -1,0 +1,1742 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A beginner-friendly simulated hospital infrastructure and software integration project.">
+      
+      
+      
+        <link rel="canonical" href="https://missbeya.github.io/hospital-iam-software-integration-project/01-virtualisation-setup/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../02-windows-server/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>01 - Virtualisation Setup - Hospital Identity & Access Integration Project</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#01-virtualisation-setup" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Hospital Identity &amp; Access Integration Project" class="md-header__button md-logo" aria-label="Hospital Identity & Access Integration Project" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hospital Identity & Access Integration Project
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              01 - Virtualisation Setup
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/missBeya/hospital-iam-software-integration-project" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    missBeya/hospital-iam-software-integration-project
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Hospital Identity &amp; Access Integration Project" class="md-nav__button md-logo" aria-label="Hospital Identity & Access Integration Project" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Hospital Identity & Access Integration Project
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/missBeya/hospital-iam-software-integration-project" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    missBeya/hospital-iam-software-integration-project
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build the Environment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Build the Environment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 - Virtualisation Setup
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 - Virtualisation Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-virtualisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is Virtualisation?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Terms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Terms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#host" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Host
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hypervisor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hypervisor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Virtual Machine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guest-operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guest Operating System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iso-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-install-a-virtualisation-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Install a Virtualisation Platform
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-obtain-the-operating-system-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Obtain the Operating System Images
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2 - Obtain the Operating System Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows-server-2022" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows Server 2022
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-create-the-windows-server-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Create the Windows Server VM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-the-ubuntu-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Create the Ubuntu VM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-must-they-share-a-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Must They Share a Network?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-install-the-operating-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Install the Operating Systems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-check-your-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Check Your Environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-create-a-snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional - Create a Snapshot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-windows-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 - Windows Server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 - Networking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Identity & Access
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Identity & Access
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-active-directory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 - Active Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-access-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 - Access Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-smb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 - SMB & Permissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Integration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 - Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-ldap-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 - LDAP Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Troubleshooting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/time-sync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Time Synchronisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/password-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Password Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/smb-path-error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SMB Path Errors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/ldap-bind-error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LDAP Bind Errors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-virtualisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is Virtualisation?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Terms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Terms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#host" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Host
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hypervisor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hypervisor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Virtual Machine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guest-operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guest Operating System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iso-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISO Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-install-a-virtualisation-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Install a Virtualisation Platform
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-obtain-the-operating-system-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Obtain the Operating System Images
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2 - Obtain the Operating System Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows-server-2022" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows Server 2022
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-create-the-windows-server-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Create the Windows Server VM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-the-ubuntu-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Create the Ubuntu VM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-must-they-share-a-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Must They Share a Network?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-install-the-operating-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Install the Operating Systems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-check-your-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Check Your Environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-create-a-snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional - Create a Snapshot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+    
+      
+    
+    <a href="https://github.com/missBeya/hospital-iam-software-integration-project/raw/master/docs/01-virtualisation-setup.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="01-virtualisation-setup">01 - Virtualisation Setup</h1>
+<h2 id="goal">Goal</h2>
+<p>In this lesson, you will create the virtual environment that will host our simulated hospital infrastructure.</p>
+<p>By the end, you will have two virtual machines:</p>
+<ul>
+<li>a Windows Server 2022 VM</li>
+<li>an Ubuntu integration VM</li>
+</ul>
+<p>These machines will later communicate with each other as if they were separate computers inside a hospital network.</p>
+<hr />
+<h2 id="before-you-start">Before You Start</h2>
+<p>You need a computer capable of running virtual machines.</p>
+<p>The host computer can run:</p>
+<ul>
+<li>Windows</li>
+<li>macOS</li>
+<li>Linux</li>
+</ul>
+<p>You will also need a virtualisation platform.</p>
+<p>Examples include:</p>
+<ul>
+<li>VMware Fusion</li>
+<li>VMware Workstation</li>
+<li>VirtualBox</li>
+<li>Hyper-V</li>
+<li>another hypervisor capable of running the required guest operating systems</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This project was originally built using VMware Fusion, but VMware Fusion is <strong>not required</strong>.</p>
+<p>The screenshots and menus you see may differ depending on your virtualisation software.</p>
+<p>What matters is that you understand the architecture and can create virtual machines that communicate with each other.</p>
+</div>
+<hr />
+<h2 id="what-is-virtualisation">What Is Virtualisation?</h2>
+<p>Normally, one physical computer runs one operating system.</p>
+<p>Virtualisation allows one physical computer to run several independent computers at the same time.</p>
+<p>Your physical computer is called the <strong>host</strong>.</p>
+<p>The software that creates and manages virtual machines is called a <strong>hypervisor</strong>.</p>
+<p>The operating systems running inside the virtual machines are called <strong>guest operating systems</strong>.</p>
+<p>Our environment will look like this:</p>
+<div class="highlight"><pre><span></span><code>Physical Computer
+        │
+        └── Hypervisor
+                │
+                ├── Windows Server 2022 VM
+                │
+                └── Ubuntu VM
+</code></pre></div>
+<p>Each virtual machine gets its own:</p>
+<ul>
+<li>virtual CPU</li>
+<li>memory</li>
+<li>disk</li>
+<li>network adapter</li>
+<li>operating system</li>
+</ul>
+<p>To the operating system inside the VM, these virtual resources behave much like physical hardware.</p>
+<hr />
+<h2 id="key-terms">Key Terms</h2>
+<h3 id="host">Host</h3>
+<p>The physical computer running the virtualisation software.</p>
+<h3 id="hypervisor">Hypervisor</h3>
+<p>Software that creates and manages virtual machines.</p>
+<p>Examples include VMware, VirtualBox, and Hyper-V.</p>
+<h3 id="virtual-machine">Virtual Machine</h3>
+<p>A software-defined computer running inside the host computer.</p>
+<h3 id="guest-operating-system">Guest Operating System</h3>
+<p>The operating system installed inside a virtual machine.</p>
+<p>In this project our guest operating systems include Windows Server and Ubuntu.</p>
+<h3 id="iso-image">ISO Image</h3>
+<p>An ISO is a file containing installation media for an operating system.</p>
+<p>It acts like a virtual installation DVD.</p>
+<hr />
+<h2 id="step-1-install-a-virtualisation-platform">Step 1 - Install a Virtualisation Platform</h2>
+<p>Choose a hypervisor that is compatible with your host operating system.</p>
+<p>Install it using the instructions provided by the vendor.</p>
+<p>Once installed, confirm that you can create a new virtual machine.</p>
+<div class="admonition warning">
+<p class="admonition-title">Architecture compatibility</p>
+<p>Before downloading operating-system images, check that the guest operating system architecture is compatible with your computer and hypervisor.</p>
+<p>For example, x64 and ARM systems may require different installation images or virtualisation support.</p>
+</div>
+<hr />
+<h2 id="step-2-obtain-the-operating-system-images">Step 2 - Obtain the Operating System Images</h2>
+<p>You will need installation media for:</p>
+<h3 id="windows-server-2022">Windows Server 2022</h3>
+<p>Download a Windows Server 2022 installation ISO from an official Microsoft source.</p>
+<p>This server will later provide:</p>
+<ul>
+<li>Active Directory Domain Services</li>
+<li>DNS</li>
+<li>identity management</li>
+<li>authentication</li>
+<li>access control</li>
+</ul>
+<h3 id="ubuntu">Ubuntu</h3>
+<p>Download a supported Ubuntu LTS installation image from the official Ubuntu source.</p>
+<p>Ubuntu will later act as our integration machine.</p>
+<p>We will use it to test:</p>
+<ul>
+<li>network connectivity</li>
+<li>DNS</li>
+<li>LDAP</li>
+<li>application integration</li>
+</ul>
+<hr />
+<h2 id="step-3-create-the-windows-server-vm">Step 3 - Create the Windows Server VM</h2>
+<p>Create a new virtual machine and attach the Windows Server ISO.</p>
+<p>A reasonable starting configuration is:</p>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Suggested Configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>2 virtual processors</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>4-6 GB RAM</td>
+</tr>
+<tr>
+<td>Disk</td>
+<td>40-60 GB</td>
+</tr>
+<tr>
+<td>Network</td>
+<td>NAT or shared virtual network</td>
+</tr>
+</tbody>
+</table>
+<p>These values are not strict requirements.</p>
+<p>You may adjust them depending on the resources available on your host computer.</p>
+<p>Do not allocate all of your physical computer's CPU or memory to the VM.</p>
+<hr />
+<h2 id="step-4-create-the-ubuntu-vm">Step 4 - Create the Ubuntu VM</h2>
+<p>Create a second virtual machine and attach the Ubuntu ISO.</p>
+<p>A reasonable starting configuration is:</p>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Suggested Configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>2 virtual processors</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>4 GB RAM</td>
+</tr>
+<tr>
+<td>Disk</td>
+<td>25-40 GB</td>
+</tr>
+<tr>
+<td>Network</td>
+<td>Same virtual network as Windows Server</td>
+</tr>
+</tbody>
+</table>
+<p>The important part is the network configuration.</p>
+<p>Both virtual machines must eventually be able to communicate with each other.</p>
+<hr />
+<h2 id="why-must-they-share-a-network">Why Must They Share a Network?</h2>
+<p>Later, Ubuntu will send requests to Windows Server.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Ubuntu
+   │
+   │ LDAP request
+   │ TCP 389
+   ▼
+Windows Server
+Active Directory
+</code></pre></div>
+<p>If the two VMs cannot reach each other over the network, the application integration will fail.</p>
+<p>For now, simply ensure that both VMs use the same virtual networking mode.</p>
+<p>We will examine IP addresses, subnets, gateways, DNS, and connectivity in the Networking lesson.</p>
+<hr />
+<h2 id="step-5-install-the-operating-systems">Step 5 - Install the Operating Systems</h2>
+<p>Start both virtual machines and install their operating systems from the ISO images.</p>
+<p>At this stage, the objective is simply to reach a working operating system on each VM.</p>
+<p>The Windows Server configuration will be covered in the next lesson.</p>
+<hr />
+<h2 id="step-6-check-your-environment">Step 6 - Check Your Environment</h2>
+<p>You should now have something similar to:</p>
+<div class="highlight"><pre><span></span><code>Host Computer
+        │
+        └── Virtualisation Platform
+                │
+                ├── Windows Server 2022
+                │
+                └── Ubuntu
+</code></pre></div>
+<p>Confirm that:</p>
+<ul>
+<li>both virtual machines start successfully</li>
+<li>Windows Server reaches its login screen</li>
+<li>Ubuntu reaches its login screen</li>
+<li>both VMs have a virtual network adapter</li>
+<li>neither VM consumes all of the host computer's resources</li>
+</ul>
+<hr />
+<h2 id="optional-create-a-snapshot">Optional - Create a Snapshot</h2>
+<p>If your hypervisor supports snapshots, this is a useful time to create one.</p>
+<p>A snapshot records the current state of a virtual machine.</p>
+<p>If something breaks later, you may be able to return to this clean state instead of reinstalling the operating system.</p>
+<p>A useful snapshot name might be:</p>
+<div class="highlight"><pre><span></span><code>Clean OS Installation
+</code></pre></div>
+<p>Snapshots are useful for labs, but they should not be treated as a replacement for proper backups in production environments.</p>
+<hr />
+<h2 id="what-you-should-understand">What You Should Understand</h2>
+<p>Before moving on, make sure you can explain the following in your own words:</p>
+<p><strong>What is the difference between a host and a guest?</strong></p>
+<p>The host is the physical computer.<br />
+The guest is an operating system running inside a virtual machine.</p>
+<p><strong>What does a hypervisor do?</strong></p>
+<p>It creates and manages virtual machines and allocates resources such as CPU, memory, disks, and networking.</p>
+<p><strong>Why are we using two virtual machines?</strong></p>
+<p>Because we want to simulate separate systems communicating across a network, rather than installing everything on one computer.</p>
+<p><strong>Why must Windows Server and Ubuntu be able to communicate?</strong></p>
+<p>Because Ubuntu will later behave like an external system integrating with services hosted by Windows Server.</p>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<p>Without looking at the diagram, try to explain this architecture:</p>
+<div class="highlight"><pre><span></span><code>Host
+  ↓
+Hypervisor
+  ↓
+Windows Server + Ubuntu
+  ↓
+Network communication
+  ↓
+Software integration
+</code></pre></div>
+<p>If you can explain why each layer exists, you understand the foundation of the project.</p>
+<hr />
+<h2 id="next-step">Next Step</h2>
+<p>The virtual infrastructure is ready.</p>
+<p>Next, we will configure the Windows Server that will become the hospital Domain Controller.</p>
+<p><a class="md-button md-button--primary" href="../02-windows-server/">Continue to Windows Server →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy", "content.action.view"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
