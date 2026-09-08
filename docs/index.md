@@ -154,7 +154,7 @@ Real problems encountered while building the environment are preserved as troubl
 
 ## Ready?
 
-[Start with Virtualization Setup →](01-vmware-setup.md){ .md-button .md-button--primary }
+[Start with Virtualization Setup →](01-virtualisation-setup.md){ .md-button .md-button--primary }
 
 ---
 
