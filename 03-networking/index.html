@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#03-networking" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -362,6 +367,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 - Networking
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -379,6 +404,439 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-networking-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Networking Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-networking-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Networking Terms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Networking Terms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IP Address
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnet-mask" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subnet Mask
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default Gateway
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DHCP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Static IP Address
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NAT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-check-the-virtual-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Check the Virtual Network
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-inspect-windows-server-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Inspect Windows Server Networking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-inspect-ubuntu-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Inspect Ubuntu Networking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-compare-the-two-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Compare the Two Machines
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-test-the-default-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Test the Default Gateway
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-test-internet-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Test Internet Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-give-the-windows-server-a-static-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Give the Windows Server a Static IP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-the-server-need-a-static-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Does the Server Need a Static Address?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-verify-the-static-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Verify the Static Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-understand-dns-in-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Understand DNS in Active Directory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-test-communication-between-the-vms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Test Communication Between the VMs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-better-troubleshooting-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Better Troubleshooting Method
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A Better Troubleshooting Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-does-the-machine-have-an-ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Does the machine have an IP address?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-can-it-reach-its-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Can it reach its gateway?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-can-it-reach-another-ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Can it reach another IP address?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-can-it-reach-the-internet-by-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Can it reach the internet by IP?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-can-dns-resolve-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Can DNS resolve names?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-can-the-application-port-be-reached" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Can the application port be reached?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Problems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dhcp-vs-static-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DHCP vs Static IP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DHCP vs Static IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dhcp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DHCP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Static IP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -838,6 +1296,430 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-networking-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Networking Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-networking-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Networking Terms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Networking Terms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IP Address
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnet-mask" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subnet Mask
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default Gateway
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DHCP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Static IP Address
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NAT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-check-the-virtual-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Check the Virtual Network
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-inspect-windows-server-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Inspect Windows Server Networking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-inspect-ubuntu-networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Inspect Ubuntu Networking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-compare-the-two-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Compare the Two Machines
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-test-the-default-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Test the Default Gateway
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-test-internet-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Test Internet Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-give-the-windows-server-a-static-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Give the Windows Server a Static IP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-the-server-need-a-static-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Does the Server Need a Static Address?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-verify-the-static-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Verify the Static Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-understand-dns-in-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Understand DNS in Active Directory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-test-communication-between-the-vms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Test Communication Between the VMs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-better-troubleshooting-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Better Troubleshooting Method
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A Better Troubleshooting Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-does-the-machine-have-an-ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Does the machine have an IP address?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-can-it-reach-its-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Can it reach its gateway?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-can-it-reach-another-ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Can it reach another IP address?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-can-it-reach-the-internet-by-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Can it reach the internet by IP?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-can-dns-resolve-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Can DNS resolve names?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-can-the-application-port-be-reached" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Can the application port be reached?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Problems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dhcp-vs-static-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DHCP vs Static IP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DHCP vs Static IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dhcp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DHCP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Static IP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -865,9 +1747,513 @@
   
 
 
-  <h1>03 - Networking</h1>
+<h1 id="03-networking">03 - Networking</h1>
+<h2 id="goal">Goal</h2>
+<p>In this lesson, you will configure and test the network that connects the Windows Server and Ubuntu virtual machines.</p>
+<p>By the end of the lesson, you should understand:</p>
+<ul>
+<li>IP addresses</li>
+<li>subnet masks</li>
+<li>default gateways</li>
+<li>DHCP</li>
+<li>static IP addresses</li>
+<li>NAT</li>
+<li>DNS</li>
+<li>basic connectivity testing</li>
+</ul>
+<p>You will also prepare the Windows Server for its future role as a Domain Controller.</p>
+<hr />
+<h2 id="why-networking-matters">Why Networking Matters</h2>
+<p>Our environment contains separate virtual machines:</p>
+<div class="highlight"><pre><span></span><code>Host Computer
+        │
+        └── Virtual Network
+                │
+                ├── Windows Server
+                │
+                └── Ubuntu
+</code></pre></div>
+<p>Later, Ubuntu will need to communicate with services running on Windows Server.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Ubuntu
+   │
+   │ LDAP request
+   │ TCP 389
+   ▼
+Windows Server
+Active Directory
+</code></pre></div>
+<p>If the network is configured incorrectly, the application may appear to have an authentication or LDAP problem when the real issue is simply connectivity.</p>
+<p>This is why networking should be verified before application integration begins.</p>
+<hr />
+<h2 id="key-networking-terms">Key Networking Terms</h2>
+<h3 id="ip-address">IP Address</h3>
+<p>An IP address identifies a device on a network.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>192.168.100.10
+</code></pre></div>
+<p>Think of it as the network address of a computer.</p>
+<hr />
+<h3 id="subnet-mask">Subnet Mask</h3>
+<p>The subnet mask helps determine which devices belong to the same local network.</p>
+<p>A common subnet mask is:</p>
+<div class="highlight"><pre><span></span><code>255.255.255.0
+</code></pre></div>
+<p>This is also written as:</p>
+<div class="highlight"><pre><span></span><code>/24
+</code></pre></div>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>192.168.100.10/24
+192.168.100.20/24
+</code></pre></div>
+<p>normally belong to the same local subnet.</p>
+<hr />
+<h3 id="default-gateway">Default Gateway</h3>
+<p>The default gateway is the device that allows traffic to leave the local network.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>192.168.100.1
+</code></pre></div>
+<p>If a machine needs to communicate with a destination outside its local subnet, it normally sends the traffic to its default gateway.</p>
+<hr />
+<h3 id="dns">DNS</h3>
+<p>DNS stands for <strong>Domain Name System</strong>.</p>
+<p>DNS translates names into IP addresses.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>microsoft.com
+        ↓
+IP address
+</code></pre></div>
+<p>In an Active Directory environment, DNS becomes even more important because computers use DNS to locate services such as Domain Controllers.</p>
+<hr />
+<h3 id="dhcp">DHCP</h3>
+<p>DHCP stands for <strong>Dynamic Host Configuration Protocol</strong>.</p>
+<p>A DHCP server can automatically provide a computer with:</p>
+<ul>
+<li>an IP address</li>
+<li>subnet mask</li>
+<li>default gateway</li>
+<li>DNS configuration</li>
+</ul>
+<p>This is convenient for normal client devices.</p>
+<p>However, servers often use static addresses because other systems need to know where to find them consistently.</p>
+<hr />
+<h3 id="static-ip-address">Static IP Address</h3>
+<p>A static IP address does not change automatically.</p>
+<p>A Domain Controller should normally have a predictable address.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Windows Server
+192.168.100.10
+</code></pre></div>
+<p>Other machines can then consistently contact that server.</p>
+<hr />
+<h3 id="nat">NAT</h3>
+<p>NAT stands for <strong>Network Address Translation</strong>.</p>
+<p>Many virtualisation platforms use NAT to allow virtual machines to access external networks through the host computer.</p>
+<p>A simplified view looks like:</p>
+<div class="highlight"><pre><span></span><code>Virtual Machine
+      │
+      ▼
+Virtual NAT Network
+      │
+      ▼
+Host Computer
+      │
+      ▼
+Internet
+</code></pre></div>
+<p>The virtual machine has its own private IP address, while the hypervisor translates traffic when it leaves the virtual network.</p>
+<hr />
+<h2 id="step-1-check-the-virtual-network">Step 1 - Check the Virtual Network</h2>
+<p>Before configuring IP addresses, verify that both virtual machines use the same virtual networking mode.</p>
+<p>Depending on your hypervisor, you may see options such as:</p>
+<ul>
+<li>NAT</li>
+<li>Shared Network</li>
+<li>Bridged</li>
+<li>Host-only</li>
+</ul>
+<p>For this project, the important requirement is:</p>
+<p><strong>Windows Server and Ubuntu must be able to communicate with each other.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>The exact names of networking modes vary between VMware, VirtualBox, Hyper-V and other hypervisors.</p>
+<div class="highlight"><pre><span></span><code>Focus on the network architecture rather than a specific product interface.
+</code></pre></div>
+<hr />
+<h2 id="step-2-inspect-windows-server-networking">Step 2 - Inspect Windows Server Networking</h2>
+<p>Open Command Prompt or PowerShell on Windows Server.</p>
+<p>Run:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ipconfig</span>
+</code></pre></div>
+<p>For more detailed information:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ipconfig</span> <span class="p">/</span><span class="n">all</span>
+</code></pre></div>
+<p>Look for:</p>
+<ul>
+<li>IPv4 Address</li>
+<li>Subnet Mask</li>
+<li>Default Gateway</li>
+<li>DNS Servers</li>
+<li>DHCP Enabled</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>IPv4 Address:      192.168.100.20
+Subnet Mask:       255.255.255.0
+Default Gateway:   192.168.100.1
+</code></pre></div>
+<p>Your values will probably be different.</p>
+<p>Do not copy example IP addresses directly into your environment.</p>
+<hr />
+<h2 id="step-3-inspect-ubuntu-networking">Step 3 - Inspect Ubuntu Networking</h2>
+<p>On Ubuntu, open Terminal.</p>
+<p>Run:</p>
+<div class="highlight"><pre><span></span><code>ip<span class="w"> </span>addr
+</code></pre></div>
+<p>This displays the network interfaces and their IP addresses.</p>
+<p>You can also check the routing table:</p>
+<div class="highlight"><pre><span></span><code>ip<span class="w"> </span>route
+</code></pre></div>
+<p>You may see something similar to:</p>
+<div class="highlight"><pre><span></span><code>default via 192.168.100.1
+</code></pre></div>
+<p>This identifies the default gateway.</p>
+<p>To inspect DNS configuration on many modern Ubuntu systems, use:</p>
+<div class="highlight"><pre><span></span><code>resolvectl<span class="w"> </span>status
+</code></pre></div>
+<hr />
+<h2 id="step-4-compare-the-two-machines">Step 4 - Compare the Two Machines</h2>
+<p>Record the important information from both machines.</p>
+<p>For example:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Windows Server</th>
+<th>Ubuntu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IPv4</td>
+<td>192.168.100.10</td>
+<td>192.168.100.20</td>
+</tr>
+<tr>
+<td>Subnet</td>
+<td>/24</td>
+<td>/24</td>
+</tr>
+<tr>
+<td>Gateway</td>
+<td>192.168.100.1</td>
+<td>192.168.100.1</td>
+</tr>
+<tr>
+<td>Network</td>
+<td>192.168.100.0</td>
+<td>192.168.100.0</td>
+</tr>
+</tbody>
+</table>
+<p>If both machines are on the same subnet, they should normally be able to communicate directly.</p>
+<hr />
+<h2 id="step-5-test-the-default-gateway">Step 5 - Test the Default Gateway</h2>
+<p>From Windows Server:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ping</span> <span class="p">&lt;</span><span class="n">gateway-ip</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ping</span> <span class="n">192</span><span class="p">.</span><span class="n">168</span><span class="p">.</span><span class="n">100</span><span class="p">.</span><span class="n">1</span>
+</code></pre></div>
+<p>From Ubuntu:</p>
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span>&lt;gateway-ip&gt;
+</code></pre></div>
+<p>If the gateway responds, the local network path is working.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>A failed ping does not always prove that a device is unreachable.</p>
+<div class="highlight"><pre><span></span><code>Firewalls can block ICMP traffic while other services continue to work.
 
+Ping is one diagnostic tool, not a complete connectivity test.
+</code></pre></div>
+<hr />
+<h2 id="step-6-test-internet-connectivity">Step 6 - Test Internet Connectivity</h2>
+<p>An important troubleshooting technique is to separate <strong>IP connectivity</strong> from <strong>DNS resolution</strong>.</p>
+<p>First, test an external IP address.</p>
+<p>Windows:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ping</span> <span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span>
+</code></pre></div>
+<p>Ubuntu:</p>
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">8</span>.8.8.8
+</code></pre></div>
+<p>If this works, external IP connectivity exists.</p>
+<p>Now test a hostname.</p>
+<p>Windows:</p>
+<div class="highlight"><pre><span></span><code><span class="n">nslookup</span> <span class="n">microsoft</span><span class="p">.</span><span class="n">com</span>
+</code></pre></div>
+<p>Ubuntu:</p>
+<div class="highlight"><pre><span></span><code>nslookup<span class="w"> </span>microsoft.com
+</code></pre></div>
+<p>If the IP test works but the hostname lookup fails, the problem is likely related to DNS rather than basic network connectivity.</p>
+<hr />
+<h2 id="step-7-give-the-windows-server-a-static-ip">Step 7 - Give the Windows Server a Static IP</h2>
+<p>A Domain Controller should have a stable network address.</p>
+<p>Before changing anything, record the settings received through DHCP:</p>
+<ul>
+<li>current IP address</li>
+<li>subnet mask</li>
+<li>default gateway</li>
+<li>DNS server</li>
+</ul>
+<p>Then select an appropriate unused address inside the same subnet.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>IP address:      192.168.100.10
+Subnet mask:     255.255.255.0
+Default gateway: 192.168.100.1
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>These are example addresses only.</p>
+<div class="highlight"><pre><span></span><code>Your virtual network may use a completely different range.
 
+Always inspect your existing network before selecting a static IP address.
+</code></pre></div>
+<p>On Windows Server, open:</p>
+<p><strong>Server Manager → Local Server → Ethernet</strong></p>
+<p>Then open the network adapter properties.</p>
+<p>Select:</p>
+<p><strong>Internet Protocol Version 4 (TCP/IPv4)</strong></p>
+<p>and configure the chosen static address.</p>
+<hr />
+<h2 id="why-does-the-server-need-a-static-address">Why Does the Server Need a Static Address?</h2>
+<p>Imagine Ubuntu is configured to contact:</p>
+<div class="highlight"><pre><span></span><code>192.168.100.10
+</code></pre></div>
+<p>If DHCP later changes the Windows Server address to:</p>
+<div class="highlight"><pre><span></span><code>192.168.100.35
+</code></pre></div>
+<p>Ubuntu may continue trying to contact the old address.</p>
+<p>The integration would fail.</p>
+<p>A static IP gives important infrastructure a predictable location.</p>
+<hr />
+<h2 id="step-8-verify-the-static-configuration">Step 8 - Verify the Static Configuration</h2>
+<p>After changing the address, run:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ipconfig</span> <span class="p">/</span><span class="n">all</span>
+</code></pre></div>
+<p>Confirm that:</p>
+<ul>
+<li>the expected IPv4 address appears</li>
+<li>the subnet mask is correct</li>
+<li>the gateway is correct</li>
+</ul>
+<p>Then test the gateway again:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ping</span> <span class="p">&lt;</span><span class="n">gateway-ip</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>And test external connectivity:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ping</span> <span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span>
+</code></pre></div>
+<hr />
+<h2 id="step-9-understand-dns-in-active-directory">Step 9 - Understand DNS in Active Directory</h2>
+<p>DNS is particularly important in this project.</p>
+<p>Normal internet DNS may resolve names such as:</p>
+<div class="highlight"><pre><span></span><code>microsoft.com
+ubuntu.com
+github.com
+</code></pre></div>
+<p>Active Directory DNS will later also resolve internal names such as:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+dc01.hospital.local
+</code></pre></div>
+<p>After the server becomes a Domain Controller with DNS installed, domain members should use the Active Directory DNS server so they can locate domain services.</p>
+<p>A simplified architecture will eventually look like:</p>
+<div class="highlight"><pre><span></span><code>Ubuntu / Client
+      │
+      │ DNS query
+      ▼
+Windows Server
+Active Directory DNS
+      │
+      ▼
+Domain services
+</code></pre></div>
+<p>We will configure this further during the Active Directory stage.</p>
+<hr />
+<h2 id="step-10-test-communication-between-the-vms">Step 10 - Test Communication Between the VMs</h2>
+<p>Now test communication between Windows Server and Ubuntu.</p>
+<p>First find Ubuntu's address:</p>
+<div class="highlight"><pre><span></span><code>ip<span class="w"> </span>addr
+</code></pre></div>
+<p>From Windows Server:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ping</span> <span class="p">&lt;</span><span class="n">ubuntu-ip</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Then find the Windows Server address:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ipconfig</span>
+</code></pre></div>
+<p>From Ubuntu:</p>
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span>&lt;windows-server-ip&gt;
+</code></pre></div>
+<p>If both machines can reach each other, the basic network path is ready.</p>
+<hr />
+<h2 id="a-better-troubleshooting-method">A Better Troubleshooting Method</h2>
+<p>When something does not work, avoid testing everything at once.</p>
+<p>Work through the network layer by layer.</p>
+<h3 id="1-does-the-machine-have-an-ip-address">1. Does the machine have an IP address?</h3>
+<p>Windows:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ipconfig</span>
+</code></pre></div>
+<p>Ubuntu:</p>
+<div class="highlight"><pre><span></span><code>ip<span class="w"> </span>addr
+</code></pre></div>
+<h3 id="2-can-it-reach-its-gateway">2. Can it reach its gateway?</h3>
+<div class="highlight"><pre><span></span><code>Machine
+   ↓
+Gateway
+</code></pre></div>
+<h3 id="3-can-it-reach-another-ip-address">3. Can it reach another IP address?</h3>
+<div class="highlight"><pre><span></span><code>Windows Server
+      ↓
+Ubuntu
+</code></pre></div>
+<h3 id="4-can-it-reach-the-internet-by-ip">4. Can it reach the internet by IP?</h3>
+<div class="highlight"><pre><span></span><code>ping 8.8.8.8
+</code></pre></div>
+<h3 id="5-can-dns-resolve-names">5. Can DNS resolve names?</h3>
+<div class="highlight"><pre><span></span><code>nslookup microsoft.com
+</code></pre></div>
+<h3 id="6-can-the-application-port-be-reached">6. Can the application port be reached?</h3>
+<p>Later, we may test specific services such as:</p>
+<div class="highlight"><pre><span></span><code>LDAP  → TCP 389
+LDAPS → TCP 636
+SMB   → TCP 445
+</code></pre></div>
+<p>This layered approach helps identify <strong>where</strong> the failure occurs.</p>
+<hr />
+<h2 id="common-problems">Common Problems</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Possible Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No IP address</td>
+<td>Network adapter or DHCP problem</td>
+</tr>
+<tr>
+<td>Cannot reach gateway</td>
+<td>Virtual network or IP configuration problem</td>
+</tr>
+<tr>
+<td>Can reach IP but not hostname</td>
+<td>DNS problem</td>
+</tr>
+<tr>
+<td>Windows and Ubuntu cannot communicate</td>
+<td>Different networks, firewall, or addressing issue</td>
+</tr>
+<tr>
+<td>Server address changes</td>
+<td>DHCP still being used</td>
+</tr>
+<tr>
+<td>Internet works but domain services fail</td>
+<td>Internal DNS configuration may be incorrect</td>
+</tr>
+<tr>
+<td>Ping fails but application works</td>
+<td>ICMP may be blocked by a firewall</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dhcp-vs-static-ip">DHCP vs Static IP</h2>
+<p>A useful way to remember the difference:</p>
+<h3 id="dhcp_1">DHCP</h3>
+<div class="highlight"><pre><span></span><code>Device starts
+     ↓
+Requests configuration
+     ↓
+DHCP provides IP settings
+</code></pre></div>
+<p>Good for:</p>
+<ul>
+<li>laptops</li>
+<li>desktops</li>
+<li>temporary clients</li>
+<li>general user devices</li>
+</ul>
+<h3 id="static-ip">Static IP</h3>
+<div class="highlight"><pre><span></span><code>Administrator chooses address
+          ↓
+Address remains predictable
+</code></pre></div>
+<p>Commonly used for infrastructure such as:</p>
+<ul>
+<li>servers</li>
+<li>Domain Controllers</li>
+<li>DNS servers</li>
+<li>network appliances</li>
+</ul>
+<hr />
+<h2 id="what-you-should-understand">What You Should Understand</h2>
+<p>Before continuing, make sure you can explain:</p>
+<p><strong>What does an IP address do?</strong></p>
+<p>It identifies a network interface so other systems know where to send traffic.</p>
+<p><strong>What does the subnet mask do?</strong></p>
+<p>It helps determine which portion of an IP address identifies the network and which portion identifies the host.</p>
+<p><strong>What is the default gateway?</strong></p>
+<p>It provides a route toward destinations outside the local subnet.</p>
+<p><strong>What does DHCP do?</strong></p>
+<p>It automatically provides network configuration to clients.</p>
+<p><strong>Why do we give the Domain Controller a static IP?</strong></p>
+<p>Because other systems need a predictable address for services such as DNS and authentication.</p>
+<p><strong>What does DNS do?</strong></p>
+<p>It resolves names into IP addresses and, in Active Directory, helps systems locate domain services.</p>
+<p><strong>What does NAT do?</strong></p>
+<p>It translates network traffic between address spaces, allowing virtual machines on private networks to communicate with external networks through the host or hypervisor.</p>
+<hr />
+<h2 id="checkpoint">Checkpoint</h2>
+<p>Before moving on, confirm that:</p>
+<ul>
+<li>Windows Server has an IP address</li>
+<li>Ubuntu has an IP address</li>
+<li>both machines are on compatible virtual networks</li>
+<li>you know the subnet mask</li>
+<li>you know the default gateway</li>
+<li>Windows Server has a stable IP address</li>
+<li>the machines can test local connectivity</li>
+<li>DNS resolution can be tested</li>
+<li>you understand the difference between DHCP and static addressing</li>
+</ul>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<p>Without looking back at the definitions, explain what happens when Ubuntu tries to communicate with the Windows Server.</p>
+<p>Use these terms:</p>
+<ul>
+<li>IP address</li>
+<li>subnet</li>
+<li>network adapter</li>
+<li>DNS</li>
+<li>gateway</li>
+</ul>
+<p>Then answer this troubleshooting scenario:</p>
+<div class="highlight"><pre><span></span><code>ping 8.8.8.8
+SUCCESS
+
+nslookup microsoft.com
+FAIL
+</code></pre></div>
+<p>Which network service would you investigate first?</p>
+<p><strong>Answer:</strong> DNS.</p>
+<hr />
+<h2 id="next-step">Next Step</h2>
+<p>The network foundation is ready.</p>
+<p>Next, we will turn Windows Server into the identity system for the simulated hospital by installing and configuring <strong>Active Directory Domain Services</strong>.</p>
+<p><a class="md-button md-button--primary" href="../04-active-directory/">Continue to Active Directory →</a></p>
 
 
 
