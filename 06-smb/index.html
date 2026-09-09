@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#06-smb-permissions" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -505,6 +510,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 - SMB & Permissions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -522,6 +547,532 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-are" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where We Are
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-smb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is SMB?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-network-share" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Network Share?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-unc-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a UNC Path?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-access-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Our Access Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-the-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Create the Folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-add-a-test-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Add a Test File
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-share-the-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Share the Folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-understand-share-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Understand Share Permissions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-understand-ntfs-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Understand NTFS Permissions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#share-vs-ntfs-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Share vs NTFS Permissions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Share vs NTFS Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#share-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Share Permissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ntfs-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NTFS Permissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-assign-access-to-the-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Assign Access to the Security Group
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-not-assign-the-permission-directly-to-emma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Not Assign the Permission Directly to Emma?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-review-ntfs-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Review NTFS Security
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#least-privilege-still-applies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Least Privilege Still Applies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-verify-the-share" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Verify the Share
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-check-that-smb-is-listening" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Check That SMB Is Listening
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connectivity-vs-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connectivity vs Authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connectivity vs Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-test-an-authorized-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Test an Authorized User
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-test-an-unauthorized-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 - Test an Unauthorized User
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-test-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why This Test Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-success-does-not-mean-access-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Success Does Not Mean Access Success
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-12-verify-group-membership" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 12 - Verify Group Membership
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-13-test-a-permission-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 13 - Test a Permission Change
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-access-changes-may-not-appear-immediately" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Access Changes May Not Appear Immediately
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-14-inspect-current-smb-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 14 - Inspect Current SMB Connections
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-scenario-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Scenario 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-scenario-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Scenario 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-scenario-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Scenario 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-scenario-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Scenario 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-layered-troubleshooting-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Layered Troubleshooting Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-fix-access-by-granting-everyone-permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't “Fix” Access by Granting Everyone Permission
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-denied-can-be-a-successful-security-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Denied Can Be a Successful Security Control
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smb-and-active-directory-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SMB and Active Directory Together
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -838,6 +1389,523 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-are" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where We Are
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-smb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is SMB?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-network-share" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Network Share?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-unc-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a UNC Path?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-access-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Our Access Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-the-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Create the Folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-add-a-test-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Add a Test File
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-share-the-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Share the Folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-understand-share-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Understand Share Permissions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-understand-ntfs-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Understand NTFS Permissions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#share-vs-ntfs-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Share vs NTFS Permissions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Share vs NTFS Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#share-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Share Permissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ntfs-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NTFS Permissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-assign-access-to-the-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Assign Access to the Security Group
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-not-assign-the-permission-directly-to-emma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Not Assign the Permission Directly to Emma?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-review-ntfs-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Review NTFS Security
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#least-privilege-still-applies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Least Privilege Still Applies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-verify-the-share" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Verify the Share
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-check-that-smb-is-listening" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Check That SMB Is Listening
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connectivity-vs-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connectivity vs Authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connectivity vs Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-test-an-authorized-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Test an Authorized User
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-test-an-unauthorized-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 - Test an Unauthorized User
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-test-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why This Test Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-success-does-not-mean-access-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Success Does Not Mean Access Success
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-12-verify-group-membership" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 12 - Verify Group Membership
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-13-test-a-permission-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 13 - Test a Permission Change
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-access-changes-may-not-appear-immediately" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Access Changes May Not Appear Immediately
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-14-inspect-current-smb-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 14 - Inspect Current SMB Connections
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-scenario-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Scenario 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-scenario-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Scenario 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-scenario-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Scenario 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-scenario-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Scenario 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-layered-troubleshooting-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Layered Troubleshooting Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-fix-access-by-granting-everyone-permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't “Fix” Access by Granting Everyone Permission
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-denied-can-be-a-successful-security-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Denied Can Be a Successful Security Control
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smb-and-active-directory-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SMB and Active Directory Together
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -865,9 +1933,727 @@
   
 
 
-  <h1>06 - SMB & Permissions</h1>
+<h1 id="06-smb-permissions">06 - SMB &amp; Permissions</h1>
+<h2 id="goal">Goal</h2>
+<p>In this lesson, you will create a shared folder on Windows Server and use Active Directory Security Groups to control who can access it.</p>
+<p>By the end of the lesson, you should understand:</p>
+<ul>
+<li>what SMB is</li>
+<li>what a network share is</li>
+<li>the difference between Share and NTFS permissions</li>
+<li>how Active Directory groups can control resource access</li>
+<li>how authentication and authorization appear in a real access test</li>
+<li>why permissions should normally be assigned to groups rather than individual users</li>
+<li>how to troubleshoot an Access Denied error</li>
+</ul>
+<hr />
+<h2 id="where-we-are">Where We Are</h2>
+<p>Our environment now contains:</p>
+<div class="highlight"><pre><span></span><code>Active Directory
+      │
+      ├── Users
+      │
+      └── Security Groups
+              │
+              ├── GG-Nurses
+              ├── GG-Doctors
+              ├── GG-Pharmacy
+              └── GG-IT
+</code></pre></div>
+<p>The groups exist, but they do not yet control a real resource.</p>
+<p>In this lesson, we will connect a Security Group to a shared folder.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Emma Wilson
+     │
+     └── GG-Nurses
+              │
+              ▼
+       Clinical Share
+              │
+              ▼
+         Access Granted
+</code></pre></div>
+<p>while another authenticated user may receive:</p>
+<div class="highlight"><pre><span></span><code>Marie DelGloria
+       │
+       └── Not a member of GG-Nurses
+                    │
+                    ▼
+              Clinical Share
+                    │
+                    ▼
+               Access Denied
+</code></pre></div>
+<p>This turns our IAM model into a real authorization test.</p>
+<hr />
+<h2 id="what-is-smb">What Is SMB?</h2>
+<p><strong>SMB</strong> stands for <strong>Server Message Block</strong>.</p>
+<p>It is a network protocol commonly used by Windows systems to provide access to resources such as:</p>
+<ul>
+<li>shared folders</li>
+<li>files</li>
+<li>printers</li>
+</ul>
+<p>A simplified SMB connection looks like:</p>
+<div class="highlight"><pre><span></span><code>Client Computer
+      │
+      │ SMB
+      │ TCP 445
+      ▼
+Windows Server
+      │
+      └── Shared Folder
+</code></pre></div>
+<p>The modern SMB service normally uses:</p>
+<div class="highlight"><pre><span></span><code>TCP 445
+</code></pre></div>
+<hr />
+<h2 id="what-is-a-network-share">What Is a Network Share?</h2>
+<p>A folder normally exists on one computer.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>C:\HospitalData\Clinical
+</code></pre></div>
+<p>A network share makes that folder available to authorized systems over the network.</p>
+<p>It might be accessed using a UNC path such as:</p>
+<div class="highlight"><pre><span></span><code>\\DC01\Clinical
+</code></pre></div>
+<p>or:</p>
+<div class="highlight"><pre><span></span><code>\\&lt;server-ip&gt;\Clinical
+</code></pre></div>
+<hr />
+<h2 id="what-is-a-unc-path">What Is a UNC Path?</h2>
+<p>UNC stands for <strong>Universal Naming Convention</strong>.</p>
+<p>A UNC path identifies a network resource.</p>
+<p>The general format is:</p>
+<div class="highlight"><pre><span></span><code>\\ServerName\ShareName
+</code></pre></div>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>\\DC01\Clinical
+</code></pre></div>
+<p>The first component identifies the server.</p>
+<p>The second identifies the shared resource.</p>
+<hr />
+<h2 id="our-access-model">Our Access Model</h2>
+<p>For this lesson, imagine that the hospital has a shared clinical folder intended for nursing staff.</p>
+<p>We want:</p>
+<div class="highlight"><pre><span></span><code>GG-Nurses
+    │
+    ▼
+Clinical Share
+    │
+    └── Access
+</code></pre></div>
+<p>The important point is that we do <strong>not</strong> assign the permission directly to Emma.</p>
+<p>Instead:</p>
+<div class="highlight"><pre><span></span><code>Emma
+  ↓
+GG-Nurses
+  ↓
+Permission
+  ↓
+Clinical Share
+</code></pre></div>
+<p>This makes access easier to manage.</p>
+<hr />
+<h2 id="before-you-start">Before You Start</h2>
+<p>Confirm that:</p>
+<ul>
+<li>Active Directory is running</li>
+<li>the Security Groups exist</li>
+<li>at least one test user belongs to <code>GG-Nurses</code></li>
+<li>another test user exists outside <code>GG-Nurses</code></li>
+<li>Windows Server networking is working</li>
+</ul>
+<p>You can verify the Nurses group with:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADGroup</span> <span class="n">-Identity</span> <span class="n">GG-Nurses</span>
+</code></pre></div>
+<p>To inspect its members:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADGroupMember</span> <span class="n">-Identity</span> <span class="n">GG-Nurses</span>
+</code></pre></div>
+<hr />
+<h2 id="step-1-create-the-folder">Step 1 - Create the Folder</h2>
+<p>On Windows Server, create a folder for the simulated resource.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>C:\HospitalData\Clinical
+</code></pre></div>
+<p>You can create it through File Explorer.</p>
+<p>Or with PowerShell:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="s2">"C:\HospitalData\Clinical"</span> <span class="n">-ItemType</span> <span class="n">Directory</span>
+</code></pre></div>
+<hr />
+<h2 id="step-2-add-a-test-file">Step 2 - Add a Test File</h2>
+<p>Inside the folder, create a harmless test file.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>welcome.txt
+</code></pre></div>
+<p>The file might contain:</p>
+<div class="highlight"><pre><span></span><code>This is a simulated clinical resource.
+No real patient information is stored here.
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>Never place real patient data, workplace information, passwords or production credentials inside this learning environment.</p>
+<hr />
+<h2 id="step-3-share-the-folder">Step 3 - Share the Folder</h2>
+<p>Right-click the <code>Clinical</code> folder.</p>
+<p>Open:</p>
+<p><strong>Properties → Sharing</strong></p>
+<p>Then choose:</p>
+<p><strong>Advanced Sharing</strong></p>
+<p>Enable:</p>
+<p><strong>Share this folder</strong></p>
+<p>Use a simple share name such as:</p>
+<div class="highlight"><pre><span></span><code>Clinical
+</code></pre></div>
+<p>The network path will eventually resemble:</p>
+<div class="highlight"><pre><span></span><code>\\DC01\Clinical
+</code></pre></div>
+<p>Your server name may be different.</p>
+<hr />
+<h2 id="step-4-understand-share-permissions">Step 4 - Understand Share Permissions</h2>
+<p>A Windows file share can have <strong>Share Permissions</strong>.</p>
+<p>Examples include:</p>
+<ul>
+<li>Read</li>
+<li>Change</li>
+<li>Full Control</li>
+</ul>
+<p>Share permissions apply when the resource is accessed through SMB over the network.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Client
+   │
+   │ SMB
+   ▼
+Share Permissions
+   │
+   ▼
+Shared Folder
+</code></pre></div>
+<hr />
+<h2 id="step-5-understand-ntfs-permissions">Step 5 - Understand NTFS Permissions</h2>
+<p>The folder also exists on an NTFS filesystem.</p>
+<p>NTFS permissions can control actions such as:</p>
+<ul>
+<li>Read</li>
+<li>Write</li>
+<li>Modify</li>
+<li>Full Control</li>
+</ul>
+<p>These permissions apply to the files and folders themselves.</p>
+<p>So Windows may evaluate two permission layers when a user accesses the folder through the network:</p>
+<div class="highlight"><pre><span></span><code>User
+ ↓
+SMB Share Permission
+ ↓
+NTFS Permission
+ ↓
+Resource
+</code></pre></div>
+<hr />
+<h2 id="share-vs-ntfs-permissions">Share vs NTFS Permissions</h2>
+<p>This distinction is important.</p>
+<h3 id="share-permissions">Share Permissions</h3>
+<p>Apply to access through the network share.</p>
+<h3 id="ntfs-permissions">NTFS Permissions</h3>
+<p>Apply to the actual filesystem object.</p>
+<p>When both apply, the user does not gain more access simply because one layer is permissive.</p>
+<p>The effective access must satisfy the restrictions imposed by the relevant permission layers.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Share:
+Read + Change
+
+NTFS:
+Read only
+
+Result:
+User cannot modify the file
+</code></pre></div>
+<p>This is why both layers should be checked during troubleshooting.</p>
+<hr />
+<h2 id="step-6-assign-access-to-the-security-group">Step 6 - Assign Access to the Security Group</h2>
+<p>Instead of assigning access directly to Emma Wilson, assign it to:</p>
+<div class="highlight"><pre><span></span><code>GG-Nurses
+</code></pre></div>
+<p>For a learning environment, you might allow the group to:</p>
+<div class="highlight"><pre><span></span><code>Read
+or
+Modify
+</code></pre></div>
+<p>depending on the scenario you want to test.</p>
+<p>The design should remain:</p>
+<div class="highlight"><pre><span></span><code>Resource
+   ↑
+Permission
+   ↑
+GG-Nurses
+   ↑
+Users
+</code></pre></div>
+<hr />
+<h2 id="why-not-assign-the-permission-directly-to-emma">Why Not Assign the Permission Directly to Emma?</h2>
+<p>This would technically work:</p>
+<div class="highlight"><pre><span></span><code>Clinical
+   ↑
+Emma Wilson
+</code></pre></div>
+<p>But imagine 200 nurses.</p>
+<p>You would eventually have:</p>
+<div class="highlight"><pre><span></span><code>Clinical
+   ├── Emma
+   ├── Sarah
+   ├── James
+   ├── Anna
+   ├── John
+   └── ...
+</code></pre></div>
+<p>That becomes difficult to maintain.</p>
+<p>A group model is cleaner:</p>
+<div class="highlight"><pre><span></span><code>Clinical
+   ↑
+GG-Nurses
+   ↑
+200 nurses
+</code></pre></div>
+<p>When someone joins the nursing team, you update their group membership.</p>
+<p>You do not need to redesign the resource permissions.</p>
+<hr />
+<h2 id="step-7-review-ntfs-security">Step 7 - Review NTFS Security</h2>
+<p>Open:</p>
+<p><strong>Clinical → Properties → Security</strong></p>
+<p>Review the identities currently listed.</p>
+<p>Depending on your environment, inherited entries may already exist.</p>
+<p>Do not remove system or administrative permissions without understanding why they exist.</p>
+<p>Add:</p>
+<div class="highlight"><pre><span></span><code>GG-Nurses
+</code></pre></div>
+<p>and assign the level of access required for the exercise.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Read &amp; execute
+List folder contents
+Read
+</code></pre></div>
+<p>or, if the exercise requires users to modify files:</p>
+<div class="highlight"><pre><span></span><code>Modify
+</code></pre></div>
+<hr />
+<h2 id="least-privilege-still-applies">Least Privilege Still Applies</h2>
+<p>Do not automatically grant:</p>
+<div class="highlight"><pre><span></span><code>Full Control
+</code></pre></div>
+<p>just because it is convenient.</p>
+<p>Ask:</p>
+<blockquote>
+<p>What does this group actually need to do?</p>
+</blockquote>
+<p>If nurses only need to read the resource:</p>
+<div class="highlight"><pre><span></span><code>GG-Nurses
+     ↓
+Read
+</code></pre></div>
+<p>may be more appropriate than:</p>
+<div class="highlight"><pre><span></span><code>GG-Nurses
+     ↓
+Full Control
+</code></pre></div>
+<p>This is the Principle of Least Privilege applied to files.</p>
+<hr />
+<h2 id="step-8-verify-the-share">Step 8 - Verify the Share</h2>
+<p>Open PowerShell.</p>
+<p>Run:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-SmbShare</span>
+</code></pre></div>
+<p>You should see the new share.</p>
+<p>For more information:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-SmbShare</span> <span class="n">-Name</span> <span class="n">Clinical</span>
+</code></pre></div>
+<p>You can inspect share permissions with:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-SmbShareAccess</span> <span class="n">-Name</span> <span class="n">Clinical</span>
+</code></pre></div>
+<hr />
+<h2 id="step-9-check-that-smb-is-listening">Step 9 - Check That SMB Is Listening</h2>
+<p>SMB normally uses TCP port 445.</p>
+<p>From another Windows system, you can test whether the server accepts connections to that port with:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Test-NetConnection</span> <span class="p">&lt;</span><span class="n">server-ip</span><span class="p">&gt;</span> <span class="n">-Port</span> <span class="n">445</span>
+</code></pre></div>
+<p>A successful result may include:</p>
+<div class="highlight"><pre><span></span><code>TcpTestSucceeded : True
+</code></pre></div>
+<p>This tells you that the SMB service can be reached at the network layer.</p>
+<p>It does <strong>not</strong> prove that the user is authorized to the folder.</p>
+<hr />
+<h2 id="connectivity-vs-authorization">Connectivity vs Authorization</h2>
+<p>These are separate questions.</p>
+<h3 id="connectivity">Connectivity</h3>
+<p>Can the client reach the SMB service?</p>
+<div class="highlight"><pre><span></span><code>Client
+  ↓
+TCP 445
+  ↓
+Server
+</code></pre></div>
+<h3 id="authentication">Authentication</h3>
+<p>Can the server verify the user's identity?</p>
+<div class="highlight"><pre><span></span><code>Credentials
+    ↓
+Active Directory
+    ↓
+Authenticated
+</code></pre></div>
+<h3 id="authorization">Authorization</h3>
+<p>Is that authenticated user allowed to access this share?</p>
+<div class="highlight"><pre><span></span><code>Authenticated User
+       ↓
+Group Membership
+       ↓
+Permissions
+       ↓
+Granted / Denied
+</code></pre></div>
+<p>This separation is essential during troubleshooting.</p>
+<hr />
+<h2 id="step-10-test-an-authorized-user">Step 10 - Test an Authorized User</h2>
+<p>Use a test user who belongs to:</p>
+<div class="highlight"><pre><span></span><code>GG-Nurses
+</code></pre></div>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Emma Wilson
+</code></pre></div>
+<p>From a Windows client or appropriate test session, access:</p>
+<div class="highlight"><pre><span></span><code>\\DC01\Clinical
+</code></pre></div>
+<p>or use the actual server name in your environment.</p>
+<p>If Emma:</p>
+<ol>
+<li>authenticates successfully</li>
+<li>belongs to <code>GG-Nurses</code></li>
+<li>and <code>GG-Nurses</code> has the required permissions</li>
+</ol>
+<p>the expected result is:</p>
+<div class="highlight"><pre><span></span><code>Access Granted
+</code></pre></div>
+<hr />
+<h2 id="step-11-test-an-unauthorized-user">Step 11 - Test an Unauthorized User</h2>
+<p>Now use an account that is <strong>not</strong> a member of <code>GG-Nurses</code>.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Marie DelGloria
+</code></pre></div>
+<p>Assume:</p>
+<div class="highlight"><pre><span></span><code>Account exists
+Password is valid
+Account is enabled
+</code></pre></div>
+<p>Marie may successfully authenticate.</p>
+<p>But when she attempts:</p>
+<div class="highlight"><pre><span></span><code>\\DC01\Clinical
+</code></pre></div>
+<p>the expected result is:</p>
+<div class="highlight"><pre><span></span><code>Access Denied
+</code></pre></div>
+<p>if no other permission grants her access.</p>
+<hr />
+<h2 id="why-this-test-matters">Why This Test Matters</h2>
+<p>Compare the two users:</p>
+<div class="highlight"><pre><span></span><code>Emma
+ ├── Account valid
+ ├── Authentication successful
+ └── GG-Nurses member
+           ↓
+      Access Granted
 
 
+Marie
+ ├── Account valid
+ ├── Authentication successful
+ └── Not in GG-Nurses
+           ↓
+       Access Denied
+</code></pre></div>
+<p>The difference is not identity verification.</p>
+<p>The difference is <strong>authorization</strong>.</p>
+<hr />
+<h2 id="authentication-success-does-not-mean-access-success">Authentication Success Does Not Mean Access Success</h2>
+<p>This is a common troubleshooting mistake.</p>
+<p>Imagine a user says:</p>
+<blockquote>
+<p>My password works, but I cannot open the folder.</p>
+</blockquote>
+<p>Resetting the password may not solve anything.</p>
+<p>The identity may already be authenticated.</p>
+<p>The actual problem may be:</p>
+<ul>
+<li>missing group membership</li>
+<li>incorrect NTFS permissions</li>
+<li>incorrect share permissions</li>
+<li>access token not refreshed</li>
+<li>wrong resource path</li>
+</ul>
+<hr />
+<h2 id="step-12-verify-group-membership">Step 12 - Verify Group Membership</h2>
+<p>Check whether the user belongs to the required group:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADPrincipalGroupMembership</span> <span class="n">emma</span><span class="p">.</span><span class="n">wilson</span>
+</code></pre></div>
+<p>Or inspect the group:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADGroupMember</span> <span class="n">GG-Nurses</span>
+</code></pre></div>
+<p>You should be able to determine whether the authorization relationship exists:</p>
+<div class="highlight"><pre><span></span><code>Emma
+  ↓
+GG-Nurses
+</code></pre></div>
+<hr />
+<h2 id="step-13-test-a-permission-change">Step 13 - Test a Permission Change</h2>
+<p>For a controlled learning exercise, remove a test user from <code>GG-Nurses</code>.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Remove-ADGroupMember</span> <span class="n">-Identity</span> <span class="n">GG-Nurses</span> <span class="n">-Members</span> <span class="n">emma</span><span class="p">.</span><span class="n">wilson</span>
+</code></pre></div>
+<p>PowerShell will normally ask you to confirm the change.</p>
+<p>After the user's authentication context has been refreshed appropriately, test access again.</p>
+<p>The expected relationship becomes:</p>
+<div class="highlight"><pre><span></span><code>Emma
+  │
+  └── No GG-Nurses membership
+             ↓
+        Clinical Share
+             ↓
+         Access Denied
+</code></pre></div>
+<p>You can then restore the membership:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Add-ADGroupMember</span> <span class="n">-Identity</span> <span class="n">GG-Nurses</span> <span class="n">-Members</span> <span class="n">emma</span><span class="p">.</span><span class="n">wilson</span>
+</code></pre></div>
+<p>This demonstrates that access comes from group membership rather than from Emma's identity being manually attached to the folder.</p>
+<hr />
+<h2 id="why-access-changes-may-not-appear-immediately">Why Access Changes May Not Appear Immediately</h2>
+<p>When users authenticate, Windows creates an access token containing information such as Security Group memberships.</p>
+<p>If a group membership changes while the user is already signed in, the current session may still contain the previous information.</p>
+<p>A new sign-in session may therefore be required before some permission changes are reflected.</p>
+<p>This is another reason troubleshooting should include the user's current authentication session.</p>
+<hr />
+<h2 id="step-14-inspect-current-smb-connections">Step 14 - Inspect Current SMB Connections</h2>
+<p>On the server, you can inspect SMB sessions using:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-SmbSession</span>
+</code></pre></div>
+<p>You can also inspect files currently opened through SMB:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-SmbOpenFile</span>
+</code></pre></div>
+<p>These commands can help determine whether clients are actually connected to the server.</p>
+<hr />
+<h2 id="troubleshooting-scenario-1">Troubleshooting Scenario 1</h2>
+<p>The user reports:</p>
+<blockquote>
+<p>I cannot open <code>\\DC01\Clinical</code>.</p>
+</blockquote>
+<p>Start with the path.</p>
+<p>Check:</p>
+<div class="highlight"><pre><span></span><code>Is the server name correct?
+        ↓
+Is the share name correct?
+        ↓
+Does the share exist?
+</code></pre></div>
+<p>Verify:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-SmbShare</span> <span class="n">-Name</span> <span class="n">Clinical</span>
+</code></pre></div>
+<hr />
+<h2 id="troubleshooting-scenario-2">Troubleshooting Scenario 2</h2>
+<p>The server name cannot be resolved.</p>
+<p>Test DNS:</p>
+<div class="highlight"><pre><span></span><code><span class="n">nslookup</span> <span class="n">DC01</span>
+</code></pre></div>
+<p>If name resolution fails, try to determine whether the issue is DNS rather than SMB.</p>
+<p>You can also temporarily compare behavior using the server IP:</p>
+<div class="highlight"><pre><span></span><code>\\&lt;server-ip&gt;\Clinical
+</code></pre></div>
+<p>If IP-based access behaves differently from name-based access, DNS deserves investigation.</p>
+<hr />
+<h2 id="troubleshooting-scenario-3">Troubleshooting Scenario 3</h2>
+<p>The server is reachable but SMB is not.</p>
+<p>Test port 445:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Test-NetConnection</span> <span class="p">&lt;</span><span class="n">server-ip</span><span class="p">&gt;</span> <span class="n">-Port</span> <span class="n">445</span>
+</code></pre></div>
+<p>If:</p>
+<div class="highlight"><pre><span></span><code>TcpTestSucceeded : False
+</code></pre></div>
+<p>investigate areas such as:</p>
+<ul>
+<li>Windows Firewall</li>
+<li>SMB service availability</li>
+<li>network configuration</li>
+<li>routing</li>
+<li>wrong IP address</li>
+</ul>
+<p>Do not start changing Active Directory groups when the SMB service itself cannot be reached.</p>
+<hr />
+<h2 id="troubleshooting-scenario-4">Troubleshooting Scenario 4</h2>
+<p>TCP 445 works but the user receives Access Denied.</p>
+<p>Now investigate authorization.</p>
+<p>Check:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADPrincipalGroupMembership</span> <span class="p">&lt;</span><span class="n">username</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Then:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-SmbShareAccess</span> <span class="n">-Name</span> <span class="n">Clinical</span>
+</code></pre></div>
+<p>Also inspect:</p>
+<p><strong>Folder Properties → Security</strong></p>
+<p>because NTFS permissions may be responsible for the denial.</p>
+<hr />
+<h2 id="a-layered-troubleshooting-model">A Layered Troubleshooting Model</h2>
+<p>When an SMB resource cannot be accessed, work through the layers.</p>
+<div class="highlight"><pre><span></span><code>1. Resource Path
+       ↓
+2. DNS / Server Resolution
+       ↓
+3. Network Reachability
+       ↓
+4. TCP 445
+       ↓
+5. Authentication
+       ↓
+6. Security Group Membership
+       ↓
+7. Share Permissions
+       ↓
+8. NTFS Permissions
+       ↓
+9. Effective Access
+</code></pre></div>
+<p>This approach is much more useful than randomly changing permissions.</p>
+<hr />
+<h2 id="dont-fix-access-by-granting-everyone-permission">Don't “Fix” Access by Granting Everyone Permission</h2>
+<p>Suppose Marie receives Access Denied.</p>
+<p>A poor solution would be:</p>
+<div class="highlight"><pre><span></span><code>Everyone
+   ↓
+Full Control
+</code></pre></div>
+<p>The error disappears, but the security problem becomes much worse.</p>
+<p>The correct question is:</p>
+<blockquote>
+<p>Should Marie have access to this resource?</p>
+</blockquote>
+<p>If the answer is no:</p>
+<div class="highlight"><pre><span></span><code>Access Denied
+</code></pre></div>
+<p>is actually the correct system behavior.</p>
+<p>Not every error reported by a user represents a broken system.</p>
+<hr />
+<h2 id="access-denied-can-be-a-successful-security-control">Access Denied Can Be a Successful Security Control</h2>
+<p>This is an important IAM idea.</p>
+<p>If:</p>
+<div class="highlight"><pre><span></span><code>Marie
+   ↓
+Not authorized
+   ↓
+Access Denied
+</code></pre></div>
+<p>then the access-control system may be functioning exactly as intended.</p>
+<p>Troubleshooting therefore requires understanding both:</p>
+<ul>
+<li>the technical behavior</li>
+<li>the intended access policy</li>
+</ul>
+<hr />
+<h2 id="smb-and-active-directory-together">SMB and Active Directory Together</h2>
+<p>We can now see multiple technologies working together:</p>
+<div class="highlight"><pre><span></span><code>User
+ │
+ ▼
+Active Directory
+ │
+ ├── Authentication
+ │
+ └── Group Membership
+          │
+          ▼
+     SMB Resource
+          │
+          ├── Share Permissions
+          └── NTFS Permissions
+                   │
+                   ▼
+            Access Decision
+</code></pre></div>
+<p>This is much closer to how identity integration works in a real enterprise environment.</p>
+<hr />
+<h2 id="what-you-should-understand">What You Should Understand</h2>
+<p>Before continuing, make sure you can explain:</p>
+<p><strong>What is SMB?</strong></p>
+<p>A network protocol commonly used to access shared files and other resources.</p>
+<p><strong>Which port does modern SMB normally use?</strong></p>
+<p>TCP 445.</p>
+<p><strong>What is a UNC path?</strong></p>
+<p>A network path such as:</p>
+<div class="highlight"><pre><span></span><code>\\ServerName\ShareName
+</code></pre></div>
+<p><strong>Why use a Security Group instead of assigning permissions directly to every user?</strong></p>
+<p>Because group-based permissions are easier to manage, review and scale.</p>
+<p><strong>What is the difference between Share and NTFS permissions?</strong></p>
+<p>Share permissions control network access through the share, while NTFS permissions control access to the filesystem object.</p>
+<p><strong>Can a user authenticate successfully and still receive Access Denied?</strong></p>
+<p>Yes.</p>
+<p>Authentication verifies identity.</p>
+<p>Authorization determines access.</p>
+<p><strong>Is Access Denied always an error?</strong></p>
+<p>No.</p>
+<p>If the user should not have access, the denial is the correct security outcome.</p>
+<hr />
+<h2 id="checkpoint">Checkpoint</h2>
+<p>Before moving on, confirm that:</p>
+<ul>
+<li>a shared folder exists</li>
+<li>the folder has an SMB share name</li>
+<li><code>Get-SmbShare</code> shows the share</li>
+<li>a Security Group is used for access</li>
+<li>NTFS permissions have been reviewed</li>
+<li>share permissions have been reviewed</li>
+<li>an authorized user can be tested</li>
+<li>an unauthorized user can be tested</li>
+<li>you understand authentication vs authorization</li>
+<li>you understand why TCP 445 testing is different from permission testing</li>
+</ul>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<p>Consider this scenario:</p>
+<div class="highlight"><pre><span></span><code>Test-NetConnection DC01 -Port 445
+
+TcpTestSucceeded : True
+</code></pre></div>
+<p>Emma can access:</p>
+<div class="highlight"><pre><span></span><code>\\DC01\Clinical
+</code></pre></div>
+<p>Marie receives:</p>
+<div class="highlight"><pre><span></span><code>Access Denied
+</code></pre></div>
+<p>Both accounts have valid passwords.</p>
+<p>Answer:</p>
+<ol>
+<li>Is the network path to SMB working?</li>
+<li>Is TCP 445 available?</li>
+<li>Is Marie's password necessarily the problem?</li>
+<li>Which IAM information should you inspect?</li>
+<li>Should you simply add Marie to <code>GG-Nurses</code>?</li>
+</ol>
+<p>The answer to question 5 is:</p>
+<blockquote>
+<p>Only if her role genuinely requires nursing access.</p>
+</blockquote>
+<p>Authorization should follow business requirements, not simply remove error messages.</p>
+<hr />
+<h2 id="next-step">Next Step</h2>
+<p>We now have a working Windows-based identity and access environment:</p>
+<div class="highlight"><pre><span></span><code>Active Directory
+      ↓
+Users
+      ↓
+Security Groups
+      ↓
+Permissions
+      ↓
+SMB Resources
+</code></pre></div>
+<p>Next, we will introduce the <strong>Ubuntu integration machine</strong>.</p>
+<p>Instead of administering Active Directory from the Domain Controller itself, we will begin interacting with the hospital infrastructure from an external Linux system.</p>
+<p><a class="md-button md-button--primary" href="../07-ubuntu/">Continue to Ubuntu Integration →</a></p>
 
 
 
