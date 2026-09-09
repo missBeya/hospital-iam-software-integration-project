@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#05-access-management" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -477,6 +482,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 - Access Management
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -494,6 +519,638 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-are" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where We Are
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity-and-access-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identity and Access Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identity and Access Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-vs-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication vs Authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication vs Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-provisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is Provisioning?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-hospital-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Hospital Identities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-open-active-directory-users-and-computers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Open Active Directory Users and Computers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-create-a-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Create a User
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-configure-the-initial-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Configure the Initial Password
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Password Policies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-the-remaining-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Create the Remaining Users
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-verify-users-with-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Verify Users with PowerShell
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Security Group?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use Groups?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-create-security-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Create Security Groups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-add-users-to-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Add Users to Groups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-verify-group-membership" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Verify Group Membership
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-simple-access-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Simple Access Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#least-privilege" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Least Privilege
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-least-privilege-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Least Privilege Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-based-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role-Based Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-permission-accumulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Avoid Permission Accumulation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-modify-a-users-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Modify a User's Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#joiner-mover-leaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Joiner, Mover, Leaver
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Joiner, Mover, Leaver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#joiner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Joiner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leaver
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-deprovisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is Deprovisioning?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-disable-a-user-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Disable a User Account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-vs-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disable vs Delete
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Disable vs Delete">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-an-account-with-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disable an Account with PowerShell
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-an-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable an Account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspect-group-membership-with-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inspect Group Membership with PowerShell
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Access
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Access">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-can-she-authenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Can she authenticate?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-is-the-account-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Is the account enabled?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-is-she-in-the-required-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Is she in the required group?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-does-the-group-have-permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Does the group have permission?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-has-the-access-change-taken-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Has the access change taken effect?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-better-troubleshooting-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Better Troubleshooting Question
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-not-give-permissions-directly-to-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Not Give Permissions Directly to Users?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity-vs-group-vs-permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identity vs Group vs Permission
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Service Accounts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -838,6 +1495,629 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-are" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where We Are
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity-and-access-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identity and Access Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identity and Access Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-vs-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication vs Authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication vs Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-provisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is Provisioning?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-hospital-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Hospital Identities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-open-active-directory-users-and-computers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Open Active Directory Users and Computers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-create-a-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Create a User
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-configure-the-initial-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Configure the Initial Password
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Password Policies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-the-remaining-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Create the Remaining Users
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-verify-users-with-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Verify Users with PowerShell
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Security Group?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use Groups?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-create-security-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Create Security Groups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-add-users-to-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Add Users to Groups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-verify-group-membership" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Verify Group Membership
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-simple-access-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Simple Access Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#least-privilege" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Least Privilege
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-least-privilege-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Least Privilege Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-based-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role-Based Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-permission-accumulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Avoid Permission Accumulation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-modify-a-users-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Modify a User's Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#joiner-mover-leaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Joiner, Mover, Leaver
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Joiner, Mover, Leaver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#joiner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Joiner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leaver
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-deprovisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is Deprovisioning?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-disable-a-user-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Disable a User Account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-vs-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disable vs Delete
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Disable vs Delete">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-an-account-with-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disable an Account with PowerShell
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-an-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable an Account
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspect-group-membership-with-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inspect Group Membership with PowerShell
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Access
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Access">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-can-she-authenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Can she authenticate?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-is-the-account-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Is the account enabled?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-is-she-in-the-required-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Is she in the required group?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-does-the-group-have-permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Does the group have permission?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-has-the-access-change-taken-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Has the access change taken effect?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-better-troubleshooting-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Better Troubleshooting Question
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-not-give-permissions-directly-to-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Not Give Permissions Directly to Users?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity-vs-group-vs-permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identity vs Group vs Permission
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Service Accounts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -865,9 +2145,698 @@
   
 
 
-  <h1>05 - Access Management</h1>
+<h1 id="05-access-management">05 - Access Management</h1>
+<h2 id="goal">Goal</h2>
+<p>In this lesson, you will create and manage identities inside Active Directory and use Security Groups to control access.</p>
+<p>By the end of the lesson, you should understand:</p>
+<ul>
+<li>user provisioning</li>
+<li>Security Groups</li>
+<li>group membership</li>
+<li>authentication</li>
+<li>authorization</li>
+<li>least privilege</li>
+<li>role-based access</li>
+<li>account disabling</li>
+<li>deprovisioning</li>
+<li>how to verify access decisions</li>
+</ul>
+<hr />
+<h2 id="where-we-are">Where We Are</h2>
+<p>The environment now contains a Domain Controller running Active Directory:</p>
+<div class="highlight"><pre><span></span><code>Windows Server
+      │
+      ├── Active Directory
+      ├── DNS
+      └── hospital.local
+</code></pre></div>
+<p>We also created Organizational Units to organise hospital identities.</p>
+<p>Now we will begin creating the identities themselves.</p>
+<p>A simplified structure might look like:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+      │
+      ├── Doctors
+      ├── Nurses
+      ├── Pharmacy
+      └── IT
+</code></pre></div>
+<p>But organising users is only part of Identity and Access Management.</p>
+<p>We must also decide:</p>
+<blockquote>
+<p>What should each identity be allowed to access?</p>
+</blockquote>
+<hr />
+<h2 id="identity-and-access-management">Identity and Access Management</h2>
+<p>Identity and Access Management, often shortened to <strong>IAM</strong>, combines two important questions:</p>
+<h3 id="identity">Identity</h3>
+<p><strong>Who is the user?</strong></p>
+<h3 id="access">Access</h3>
+<p><strong>What should that user be allowed to do?</strong></p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Emma Wilson
+     │
+     ├── Identity: Nurse
+     │
+     └── Access: Nursing resources
+</code></pre></div>
+<p>Active Directory helps us manage both identity information and access-related group memberships.</p>
+<hr />
+<h2 id="authentication-vs-authorization">Authentication vs Authorization</h2>
+<p>These concepts must remain separate.</p>
+<h3 id="authentication">Authentication</h3>
+<p>Authentication verifies identity.</p>
+<div class="highlight"><pre><span></span><code>Emma enters credentials
+        ↓
+Active Directory
+        ↓
+Credentials valid
+        ↓
+Authenticated
+</code></pre></div>
+<h3 id="authorization">Authorization</h3>
+<p>Authorization determines what the authenticated identity may access.</p>
+<div class="highlight"><pre><span></span><code>Emma
+  │
+  ├── Authenticated
+  │
+  └── Member of GG-Nurses
+              ↓
+       Nursing resource
+              ↓
+          Access granted
+</code></pre></div>
+<p>A user may successfully authenticate and still receive:</p>
+<div class="highlight"><pre><span></span><code>Access Denied
+</code></pre></div>
+<p>That is not necessarily an authentication failure.</p>
+<p>It may be an authorization decision.</p>
+<hr />
+<h2 id="what-is-provisioning">What Is Provisioning?</h2>
+<p><strong>Provisioning</strong> is the process of creating and configuring an identity so that a person or system receives the access required for their role.</p>
+<p>A simplified onboarding process could be:</p>
+<div class="highlight"><pre><span></span><code>Employee joins hospital
+        ↓
+Create identity
+        ↓
+Place in correct OU
+        ↓
+Assign Security Groups
+        ↓
+Provide required access
+        ↓
+User starts work
+</code></pre></div>
+<p>Provisioning should be controlled and repeatable.</p>
+<hr />
+<h2 id="example-hospital-identities">Example Hospital Identities</h2>
+<p>For this project, we can create fictional users such as:</p>
+<table>
+<thead>
+<tr>
+<th>User</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emma Wilson</td>
+<td>Nurse</td>
+</tr>
+<tr>
+<td>Mike Smith</td>
+<td>Doctor</td>
+</tr>
+<tr>
+<td>David King</td>
+<td>Pharmacy</td>
+</tr>
+<tr>
+<td>Solomon Prince</td>
+<td>IT</td>
+</tr>
+<tr>
+<td>Marie DelGloria</td>
+<td>No clinical access assigned</td>
+</tr>
+</tbody>
+</table>
+<p>These accounts are fictional and exist only for the simulated environment.</p>
+<hr />
+<h2 id="step-1-open-active-directory-users-and-computers">Step 1 - Open Active Directory Users and Computers</h2>
+<p>On the Domain Controller, open:</p>
+<p><strong>Server Manager → Tools → Active Directory Users and Computers</strong></p>
+<p>Expand:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+</code></pre></div>
+<p>You should see the Organizational Units created previously.</p>
+<hr />
+<h2 id="step-2-create-a-user">Step 2 - Create a User</h2>
+<p>Open the appropriate OU.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Nurses
+</code></pre></div>
+<p>Right-click the OU and select:</p>
+<p><strong>New → User</strong></p>
+<p>Create a fictional identity.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>First name: Emma
+Last name: Wilson
+User logon name: emma.wilson
+</code></pre></div>
+<p>The resulting identity might be represented as:</p>
+<div class="highlight"><pre><span></span><code>emma.wilson@hospital.local
+</code></pre></div>
+<hr />
+<h2 id="step-3-configure-the-initial-password">Step 3 - Configure the Initial Password</h2>
+<p>Active Directory will ask you to create a password.</p>
+<p>For a simulated employee account, you may choose:</p>
+<p><strong>User must change password at next logon</strong></p>
+<p>This allows the administrator to provide a temporary password without keeping that password permanently.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>Never use real personal, university or workplace passwords in this project.</p>
+<p>Use credentials created specifically for the simulated environment.</p>
+<hr />
+<h2 id="password-policies">Password Policies</h2>
+<p>Active Directory may enforce password rules.</p>
+<p>For example, the environment may require:</p>
+<ul>
+<li>minimum password length</li>
+<li>password complexity</li>
+<li>password history</li>
+<li>account lockout rules</li>
+</ul>
+<p>If Active Directory rejects a password, investigate the policy rather than repeatedly guessing.</p>
+<p>Password policy is part of identity security.</p>
+<hr />
+<h2 id="step-4-create-the-remaining-users">Step 4 - Create the Remaining Users</h2>
+<p>Create additional fictional identities.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Doctors OU
+└── Mike Smith
 
+Nurses OU
+└── Emma Wilson
 
+Pharmacy OU
+└── David King
+
+IT OU
+└── Solomon Prince
+</code></pre></div>
+<p>You may also create another identity that intentionally receives no departmental Security Group.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Marie DelGloria
+</code></pre></div>
+<p>We will use this account to demonstrate authorization.</p>
+<hr />
+<h2 id="step-5-verify-users-with-powershell">Step 5 - Verify Users with PowerShell</h2>
+<p>Open PowerShell as Administrator.</p>
+<p>To list users:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">*</span>
+</code></pre></div>
+<p>To search for one user:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADUser</span> <span class="n">-Identity</span> <span class="n">emma</span><span class="p">.</span><span class="n">wilson</span>
+</code></pre></div>
+<p>PowerShell gives us another way to inspect Active Directory without relying only on the GUI.</p>
+<hr />
+<h2 id="what-is-a-security-group">What Is a Security Group?</h2>
+<p>A <strong>Security Group</strong> allows multiple identities to be treated as one access-control unit.</p>
+<p>Instead of giving permissions directly to every nurse:</p>
+<div class="highlight"><pre><span></span><code>Emma → Clinical Folder
+Sarah → Clinical Folder
+John → Clinical Folder
+Anna → Clinical Folder
+</code></pre></div>
+<p>we can create:</p>
+<div class="highlight"><pre><span></span><code>GG-Nurses
+    │
+    ├── Emma
+    ├── Sarah
+    ├── John
+    └── Anna
+         │
+         ▼
+   Clinical Folder
+</code></pre></div>
+<p>We assign the permission to the <strong>group</strong>.</p>
+<p>Users receive access by becoming members of that group.</p>
+<hr />
+<h2 id="why-use-groups">Why Use Groups?</h2>
+<p>Group-based access is easier to manage and audit.</p>
+<p>Imagine 100 nurses need the same resource.</p>
+<p>Without groups:</p>
+<div class="highlight"><pre><span></span><code>100 users
+   ↓
+100 individual permission assignments
+</code></pre></div>
+<p>With a group:</p>
+<div class="highlight"><pre><span></span><code>100 users
+   ↓
+GG-Nurses
+   ↓
+1 permission assignment
+</code></pre></div>
+<p>This is much easier to maintain.</p>
+<hr />
+<h2 id="step-6-create-security-groups">Step 6 - Create Security Groups</h2>
+<p>In Active Directory Users and Computers, create Security Groups for the hospital roles.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>GG-Doctors
+GG-Nurses
+GG-Pharmacy
+GG-IT
+</code></pre></div>
+<p>The <code>GG</code> naming convention can be used to indicate a <strong>Global Group</strong>.</p>
+<p>Naming conventions vary between organisations.</p>
+<p>What matters is that names remain:</p>
+<ul>
+<li>understandable</li>
+<li>consistent</li>
+<li>meaningful</li>
+</ul>
+<hr />
+<h2 id="step-7-add-users-to-groups">Step 7 - Add Users to Groups</h2>
+<p>Add each fictional identity to the group appropriate for their role.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Emma Wilson
+    ↓
+GG-Nurses
+
+Mike Smith
+    ↓
+GG-Doctors
+
+David King
+    ↓
+GG-Pharmacy
+
+Solomon Prince
+    ↓
+GG-IT
+</code></pre></div>
+<p>Leave Marie outside these groups for now.</p>
+<p>This gives us an account that can authenticate but does not have the same authorization as the clinical users.</p>
+<hr />
+<h2 id="step-8-verify-group-membership">Step 8 - Verify Group Membership</h2>
+<p>Using the GUI:</p>
+<ol>
+<li>Open the user</li>
+<li>Select <strong>Properties</strong></li>
+<li>Open <strong>Member Of</strong></li>
+</ol>
+<p>You should see the Security Groups assigned to the account.</p>
+<p>You can also verify using PowerShell:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADPrincipalGroupMembership</span> <span class="n">emma</span><span class="p">.</span><span class="n">wilson</span>
+</code></pre></div>
+<p>This shows the groups associated with Emma's identity.</p>
+<hr />
+<h2 id="a-simple-access-model">A Simple Access Model</h2>
+<p>We can now model access like this:</p>
+<div class="highlight"><pre><span></span><code>Emma Wilson
+    │
+    └── GG-Nurses
+             │
+             ▼
+       Nursing Resource
+</code></pre></div>
+<p>For Mike:</p>
+<div class="highlight"><pre><span></span><code>Mike Smith
+    │
+    └── GG-Doctors
+             │
+             ▼
+        Doctor Resource
+</code></pre></div>
+<p>For Marie:</p>
+<div class="highlight"><pre><span></span><code>Marie DelGloria
+       │
+       ├── Valid account
+       └── Not in GG-Nurses
+                    │
+                    ▼
+              Nursing Resource
+                    │
+                    ▼
+               Access Denied
+</code></pre></div>
+<p>This demonstrates the difference between authentication and authorization.</p>
+<hr />
+<h2 id="least-privilege">Least Privilege</h2>
+<p>The <strong>Principle of Least Privilege</strong> means that identities should receive only the access required to perform their responsibilities.</p>
+<p>A nurse may need access to nursing resources.</p>
+<p>That does not automatically mean the nurse should receive:</p>
+<ul>
+<li>Domain Administrator access</li>
+<li>IT administration access</li>
+<li>pharmacy administration access</li>
+<li>access to every server</li>
+<li>access to every file share</li>
+</ul>
+<p>A simplified model is:</p>
+<div class="highlight"><pre><span></span><code>User
+ ↓
+Job requirement
+ ↓
+Minimum necessary access
+</code></pre></div>
+<p>Not:</p>
+<div class="highlight"><pre><span></span><code>User
+ ↓
+Give everything
+</code></pre></div>
+<hr />
+<h2 id="why-least-privilege-matters">Why Least Privilege Matters</h2>
+<p>Excessive permissions increase risk.</p>
+<p>If an account is:</p>
+<ul>
+<li>compromised</li>
+<li>misused</li>
+<li>incorrectly configured</li>
+</ul>
+<p>the damage is limited when the account only has the permissions required for its role.</p>
+<p>Least privilege is therefore both an operational and security principle.</p>
+<hr />
+<h2 id="role-based-access">Role-Based Access</h2>
+<p>Many organisations assign access according to roles.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Role: Nurse
+    ↓
+GG-Nurses
+    ↓
+Nursing permissions
+</code></pre></div>
+<p>If Emma later changes role:</p>
+<div class="highlight"><pre><span></span><code>Nurse
+  ↓
+Doctor
+</code></pre></div>
+<p>the administrator should review and change her access rather than simply adding more permissions indefinitely.</p>
+<hr />
+<h2 id="avoid-permission-accumulation">Avoid Permission Accumulation</h2>
+<p>Consider this example:</p>
+<div class="highlight"><pre><span></span><code>Emma starts as Nurse
+       ↓
+Gets Nurses access
+
+Emma moves to Pharmacy
+       ↓
+Gets Pharmacy access
+```
+
+If nobody removes the old group:
+
+~~~text
+Emma
+ ├── Nurses access
+ └── Pharmacy access
+</code></pre></div>
+<p>She may now have more access than her current role requires.</p>
+<p>This is sometimes described as <strong>privilege accumulation</strong> or access creep.</p>
+<p>Access should therefore be reviewed when roles change.</p>
+<hr />
+<h2 id="step-9-modify-a-users-access">Step 9 - Modify a User's Access</h2>
+<p>Suppose a fictional employee transfers from one department to another.</p>
+<p>Review:</p>
+<ol>
+<li>the user's current groups</li>
+<li>the groups required for the new role</li>
+<li>groups that are no longer required</li>
+</ol>
+<p>Remove unnecessary memberships.</p>
+<p>Add only the groups required for the new responsibilities.</p>
+<p>Then verify the result.</p>
+<hr />
+<h2 id="joiner-mover-leaver">Joiner, Mover, Leaver</h2>
+<p>Identity lifecycle management is often described using three stages.</p>
+<h3 id="joiner">Joiner</h3>
+<p>A new employee arrives.</p>
+<div class="highlight"><pre><span></span><code>Joiner
+  ↓
+Create account
+  ↓
+Assign required access
+</code></pre></div>
+<h3 id="mover">Mover</h3>
+<p>An employee changes role.</p>
+<div class="highlight"><pre><span></span><code>Mover
+  ↓
+Review existing access
+  ↓
+Remove unnecessary permissions
+  ↓
+Add new required access
+</code></pre></div>
+<h3 id="leaver">Leaver</h3>
+<p>An employee leaves the organisation.</p>
+<div class="highlight"><pre><span></span><code>Leaver
+  ↓
+Disable access
+  ↓
+Remove sensitive memberships
+  ↓
+Complete deprovisioning
+</code></pre></div>
+<p>This lifecycle is extremely important in enterprise IAM.</p>
+<hr />
+<h2 id="what-is-deprovisioning">What Is Deprovisioning?</h2>
+<p><strong>Deprovisioning</strong> removes or disables access when an identity should no longer be active.</p>
+<p>For example, if a staff member leaves the hospital:</p>
+<div class="highlight"><pre><span></span><code>Employee leaves
+      ↓
+Disable account
+      ↓
+Remove access
+      ↓
+Review ownership/resources
+      ↓
+Account handled according to policy
+</code></pre></div>
+<p>Simply forgetting the account creates a security risk.</p>
+<hr />
+<h2 id="step-10-disable-a-user-account">Step 10 - Disable a User Account</h2>
+<p>In Active Directory Users and Computers:</p>
+<ol>
+<li>locate the user</li>
+<li>right-click the account</li>
+<li>select <strong>Disable Account</strong></li>
+</ol>
+<p>A disabled account remains in Active Directory but cannot normally authenticate.</p>
+<p>This can be safer than immediately deleting an account because administrators may need to preserve information during an offboarding process.</p>
+<hr />
+<h2 id="disable-vs-delete">Disable vs Delete</h2>
+<p>These actions are different.</p>
+<h3 id="disable">Disable</h3>
+<div class="highlight"><pre><span></span><code>Account exists
+      ↓
+Authentication blocked
+</code></pre></div>
+<h3 id="delete">Delete</h3>
+<div class="highlight"><pre><span></span><code>Directory object removed
+</code></pre></div>
+<p>In real organisations, offboarding procedures determine when accounts are disabled, retained, archived or deleted.</p>
+<p>Do not assume deletion should always be immediate.</p>
+<hr />
+<h2 id="disable-an-account-with-powershell">Disable an Account with PowerShell</h2>
+<p>You can disable an account using:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Disable-ADAccount</span> <span class="n">-Identity</span> <span class="n">marie</span><span class="p">.</span><span class="n">delgloria</span>
+</code></pre></div>
+<p>You can verify whether an account is enabled with:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADUser</span> <span class="n">-Identity</span> <span class="n">marie</span><span class="p">.</span><span class="n">delgloria</span> <span class="n">-Properties</span> <span class="n">Enabled</span>
+</code></pre></div>
+<hr />
+<h2 id="enable-an-account">Enable an Account</h2>
+<p>If an account was disabled for testing and needs to be restored:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Enable-ADAccount</span> <span class="n">-Identity</span> <span class="n">marie</span><span class="p">.</span><span class="n">delgloria</span>
+</code></pre></div>
+<p>Always verify that restoring an account is actually appropriate before enabling it.</p>
+<hr />
+<h2 id="inspect-group-membership-with-powershell">Inspect Group Membership with PowerShell</h2>
+<p>You can inspect a user:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADUser</span> <span class="n">-Identity</span> <span class="n">emma</span><span class="p">.</span><span class="n">wilson</span>
+</code></pre></div>
+<p>You can inspect the groups they belong to:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADPrincipalGroupMembership</span> <span class="n">emma</span><span class="p">.</span><span class="n">wilson</span>
+</code></pre></div>
+<p>You can inspect members of a group:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADGroupMember</span> <span class="n">-Identity</span> <span class="n">GG-Nurses</span>
+</code></pre></div>
+<p>These commands are useful during troubleshooting.</p>
+<hr />
+<h2 id="troubleshooting-access">Troubleshooting Access</h2>
+<p>Suppose Emma reports:</p>
+<blockquote>
+<p>I can sign in, but I cannot access the nursing resource.</p>
+</blockquote>
+<p>Do not immediately reset her password.</p>
+<p>Work through the problem logically.</p>
+<h3 id="step-1-can-she-authenticate">Step 1 - Can she authenticate?</h3>
+<p>Can Emma sign in successfully?</p>
+<p>If yes, her credentials may not be the problem.</p>
+<h3 id="step-2-is-the-account-enabled">Step 2 - Is the account enabled?</h3>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADUser</span> <span class="n">emma</span><span class="p">.</span><span class="n">wilson</span> <span class="n">-Properties</span> <span class="n">Enabled</span>
+</code></pre></div>
+<h3 id="step-3-is-she-in-the-required-group">Step 3 - Is she in the required group?</h3>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADPrincipalGroupMembership</span> <span class="n">emma</span><span class="p">.</span><span class="n">wilson</span>
+</code></pre></div>
+<p>Look for:</p>
+<div class="highlight"><pre><span></span><code>GG-Nurses
+</code></pre></div>
+<h3 id="step-4-does-the-group-have-permission">Step 4 - Does the group have permission?</h3>
+<p>Even if Emma is in the correct group, the group itself must be authorized to the resource.</p>
+<h3 id="step-5-has-the-access-change-taken-effect">Step 5 - Has the access change taken effect?</h3>
+<p>Some access changes may require a new logon session or refreshed authentication token before they are reflected everywhere.</p>
+<hr />
+<h2 id="a-better-troubleshooting-question">A Better Troubleshooting Question</h2>
+<p>Instead of asking:</p>
+<blockquote>
+<p>Why can't the user access the folder?</p>
+</blockquote>
+<p>Break the problem into layers:</p>
+<div class="highlight"><pre><span></span><code>Does the identity exist?
+        ↓
+Is the account enabled?
+        ↓
+Can the user authenticate?
+        ↓
+Is the user in the correct group?
+        ↓
+Does that group have permission?
+        ↓
+Can the resource be reached?
+</code></pre></div>
+<p>This makes troubleshooting much more systematic.</p>
+<hr />
+<h2 id="why-not-give-permissions-directly-to-users">Why Not Give Permissions Directly to Users?</h2>
+<p>Direct user permissions may work technically.</p>
+<p>But they become difficult to manage at scale.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Emma → permission
+Mike → permission
+David → permission
+Solomon → permission
+```
+
+becomes harder to understand later.
+
+A group model is clearer:
+
+~~~text
+Users
+  ↓
+Security Groups
+  ↓
+Permissions
+  ↓
+Resources
+</code></pre></div>
+<p>This creates separation between:</p>
+<p><strong>Who the users are</strong></p>
+<p>and:</p>
+<p><strong>What access their roles receive</strong></p>
+<hr />
+<h2 id="identity-vs-group-vs-permission">Identity vs Group vs Permission</h2>
+<p>Keep these three layers separate.</p>
+<div class="highlight"><pre><span></span><code>Identity
+Emma Wilson
+     ↓
+Group
+GG-Nurses
+     ↓
+Permission
+Read / Modify
+     ↓
+Resource
+Clinical Folder
+</code></pre></div>
+<p>This model will become very important in the next lesson when we configure SMB and NTFS permissions.</p>
+<hr />
+<h2 id="service-accounts">Service Accounts</h2>
+<p>Not every Active Directory identity represents a human.</p>
+<p>Applications and services may also require identities.</p>
+<p>These are commonly called <strong>service accounts</strong>.</p>
+<p>A service account may later allow our Ubuntu application to communicate with Active Directory.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Ubuntu Application
+        │
+        │ Uses service identity
+        ▼
+Active Directory
+        │
+        └── Directory query
+</code></pre></div>
+<p>Service accounts should also follow least privilege.</p>
+<p>An application that only needs to read directory information should not automatically receive Domain Administrator privileges.</p>
+<hr />
+<h2 id="what-you-should-understand">What You Should Understand</h2>
+<p>Before continuing, make sure you can explain:</p>
+<p><strong>What is provisioning?</strong></p>
+<p>Creating and configuring an identity with the access required for its role.</p>
+<p><strong>What is authorization?</strong></p>
+<p>Determining what an authenticated identity is allowed to access.</p>
+<p><strong>Why use Security Groups?</strong></p>
+<p>They allow permissions to be managed through reusable access groups instead of assigning access individually to every user.</p>
+<p><strong>What is least privilege?</strong></p>
+<p>Giving an identity only the permissions needed to perform its responsibilities.</p>
+<p><strong>What is deprovisioning?</strong></p>
+<p>Removing or disabling access when it is no longer required.</p>
+<p><strong>What is the Joiner-Mover-Leaver lifecycle?</strong></p>
+<p>A model for managing access when users join an organisation, change roles or leave.</p>
+<p><strong>Why might an account be disabled instead of immediately deleted?</strong></p>
+<p>Because organisations may need to block access while temporarily preserving the directory object for operational, security or policy reasons.</p>
+<hr />
+<h2 id="checkpoint">Checkpoint</h2>
+<p>Before continuing, confirm that:</p>
+<ul>
+<li>fictional Active Directory users exist</li>
+<li>users are organised appropriately</li>
+<li>Security Groups exist</li>
+<li>users have been added to the correct groups</li>
+<li>group membership can be checked</li>
+<li>you understand authentication vs authorization</li>
+<li>you understand least privilege</li>
+<li>you can disable an account</li>
+<li>you understand provisioning and deprovisioning</li>
+<li>you understand Joiner, Mover and Leaver processes</li>
+</ul>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<p>Consider these two users:</p>
+<div class="highlight"><pre><span></span><code>Emma Wilson
+Account: Enabled
+Password: Valid
+Group: GG-Nurses
+
+Marie DelGloria
+Account: Enabled
+Password: Valid
+Group: None
+</code></pre></div>
+<p>Both attempt to access a resource configured for <code>GG-Nurses</code>.</p>
+<p>Emma receives:</p>
+<div class="highlight"><pre><span></span><code>Access Granted
+</code></pre></div>
+<p>Marie receives:</p>
+<div class="highlight"><pre><span></span><code>Access Denied
+</code></pre></div>
+<p>Answer these questions:</p>
+<ol>
+<li>Did both users authenticate successfully?</li>
+<li>Why did Marie receive Access Denied?</li>
+<li>Is this an authentication problem or an authorization problem?</li>
+<li>What would you check before adding Marie to <code>GG-Nurses</code>?</li>
+</ol>
+<p>The important answer to question 4 is:</p>
+<blockquote>
+<p>Confirm that Marie's actual job role requires that access.</p>
+</blockquote>
+<p>Never fix an access problem by granting permissions before verifying that the user should have them.</p>
+<hr />
+<h2 id="next-step">Next Step</h2>
+<p>We now have identities and Security Groups.</p>
+<p>Next, we will connect those groups to a real resource by creating an SMB file share and applying group-based permissions.</p>
+<p><a class="md-button md-button--primary" href="../06-smb/">Continue to SMB &amp; Permissions →</a></p>
 
 
 
