@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#04-active-directory" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -449,6 +454,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 - Active Directory
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -466,6 +491,621 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-are" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where We Are
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is Active Directory?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-active-directory-domain-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is Active Directory Domain Services?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-vs-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication vs Authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication vs Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Domain?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-domain-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Domain Controller?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-dns-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Does DNS Matter?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-open-server-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Open Server Manager
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-choose-the-installation-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Choose the Installation Type
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-select-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Select the Server
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-install-active-directory-domain-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Install Active Directory Domain Services
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-complete-the-ad-ds-role-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Complete the AD DS Role Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-promote-this-server-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Does “Promote This Server” Mean?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-promote-the-server-to-a-domain-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Promote the Server to a Domain Controller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-create-a-new-forest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Create a New Forest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-forest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Forest?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-configure-domain-controller-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Configure Domain Controller Options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-review-the-dns-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Review the DNS Warning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-review-the-netbios-domain-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Review the NetBIOS Domain Name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-complete-the-prerequisite-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 - Complete the Prerequisite Check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-12-restart-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 12 - Restart the Server
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-13-sign-in-to-the-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 13 - Sign In to the Domain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-14-verify-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 14 - Verify Active Directory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-15-verify-active-directory-with-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 15 - Verify Active Directory with PowerShell
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-both-gui-and-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use Both GUI and PowerShell?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Use Both GUI and PowerShell?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gui-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GUI tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PowerShell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-16-open-dns-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 16 - Open DNS Manager
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-17-test-domain-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 17 - Test Domain DNS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizational-units" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizational Units
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ou-vs-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OU vs Security Group
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OU vs Security Group">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizational-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizational Unit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-18-create-the-hospital-ous" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 18 - Create the Hospital OUs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-organise-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Organise Identities?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-active-directory-stores-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Active Directory Stores Identities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#active-directory-and-ldap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Directory and LDAP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-authentication-will-eventually-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Authentication Will Eventually Work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Active Directory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Active Directory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layer-1-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 1 - Server
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-2-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 2 - Network
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-3-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 3 - DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-4-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 4 - Active Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-5-service-or-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 5 - Service or Application
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-synchronisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time Synchronisation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -838,6 +1478,612 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-are" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where We Are
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is Active Directory?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-active-directory-domain-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is Active Directory Domain Services?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-vs-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication vs Authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication vs Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Domain?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-domain-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Domain Controller?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-dns-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Does DNS Matter?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-open-server-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Open Server Manager
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-choose-the-installation-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Choose the Installation Type
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-select-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Select the Server
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-install-active-directory-domain-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Install Active Directory Domain Services
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-complete-the-ad-ds-role-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Complete the AD DS Role Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-promote-this-server-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Does “Promote This Server” Mean?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-promote-the-server-to-a-domain-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Promote the Server to a Domain Controller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-create-a-new-forest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Create a New Forest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-forest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Forest?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-configure-domain-controller-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Configure Domain Controller Options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-review-the-dns-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Review the DNS Warning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-review-the-netbios-domain-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Review the NetBIOS Domain Name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-complete-the-prerequisite-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 - Complete the Prerequisite Check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-12-restart-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 12 - Restart the Server
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-13-sign-in-to-the-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 13 - Sign In to the Domain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-14-verify-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 14 - Verify Active Directory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-15-verify-active-directory-with-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 15 - Verify Active Directory with PowerShell
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-both-gui-and-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use Both GUI and PowerShell?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Use Both GUI and PowerShell?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gui-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GUI tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PowerShell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-16-open-dns-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 16 - Open DNS Manager
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-17-test-domain-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 17 - Test Domain DNS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizational-units" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizational Units
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ou-vs-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OU vs Security Group
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OU vs Security Group">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizational-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizational Unit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-18-create-the-hospital-ous" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 18 - Create the Hospital OUs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-organise-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Organise Identities?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-active-directory-stores-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Active Directory Stores Identities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#active-directory-and-ldap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Directory and LDAP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-authentication-will-eventually-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Authentication Will Eventually Work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Active Directory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Active Directory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layer-1-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 1 - Server
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-2-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 2 - Network
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-3-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 3 - DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-4-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 4 - Active Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-5-service-or-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 5 - Service or Application
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-synchronisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time Synchronisation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -865,9 +2111,617 @@
   
 
 
-  <h1>04 - Active Directory</h1>
+<h1 id="04-active-directory">04 - Active Directory</h1>
+<h2 id="goal">Goal</h2>
+<p>In this lesson, you will turn the Windows Server into a <strong>Domain Controller</strong> by installing and configuring <strong>Active Directory Domain Services (AD DS)</strong>.</p>
+<p>By the end of the lesson, you should understand:</p>
+<ul>
+<li>what Active Directory is</li>
+<li>what a domain is</li>
+<li>what a Domain Controller does</li>
+<li>what Active Directory Domain Services provides</li>
+<li>why DNS is critical to Active Directory</li>
+<li>what a forest is</li>
+<li>what Organizational Units are</li>
+<li>how to verify that Active Directory is working</li>
+</ul>
+<hr />
+<h2 id="where-we-are">Where We Are</h2>
+<p>So far, the environment contains two virtual machines connected through a virtual network:</p>
+<div class="highlight"><pre><span></span><code>Host Computer
+        │
+        └── Virtual Network
+                │
+                ├── Windows Server
+                │      └── Static IP
+                │
+                └── Ubuntu
+</code></pre></div>
+<p>The Windows Server currently behaves like a normal standalone server.</p>
+<p>In this lesson, we will add an identity system:</p>
+<div class="highlight"><pre><span></span><code>Windows Server
+      │
+      ├── Active Directory Domain Services
+      ├── DNS
+      └── Domain Controller
+</code></pre></div>
+<p>Later, users, applications and other machines will be able to use this server for identity and authentication.</p>
+<hr />
+<h2 id="what-is-active-directory">What Is Active Directory?</h2>
+<p>Active Directory is Microsoft's directory technology for centrally managing identities and resources in an enterprise environment.</p>
+<p>Instead of managing every user separately on every computer, an organisation can maintain identities centrally.</p>
+<p>For example, a hospital may have:</p>
+<div class="highlight"><pre><span></span><code>Active Directory
+      │
+      ├── Doctors
+      ├── Nurses
+      ├── Pharmacy Staff
+      ├── IT Staff
+      └── Service Accounts
+</code></pre></div>
+<p>Applications and computers can then use this directory to determine who a user is and what resources they may access.</p>
+<hr />
+<h2 id="what-is-active-directory-domain-services">What Is Active Directory Domain Services?</h2>
+<p><strong>Active Directory Domain Services</strong>, usually shortened to <strong>AD DS</strong>, is the Windows Server role that provides the directory service.</p>
+<p>AD DS stores information about objects such as:</p>
+<ul>
+<li>users</li>
+<li>computers</li>
+<li>groups</li>
+<li>Organizational Units</li>
+<li>service accounts</li>
+<li>policies</li>
+</ul>
+<p>It also supports authentication and centralized identity management.</p>
+<hr />
+<h2 id="authentication-vs-authorization">Authentication vs Authorization</h2>
+<p>These two concepts are important throughout this project.</p>
+<h3 id="authentication">Authentication</h3>
+<p>Authentication answers:</p>
+<blockquote>
+<p>Who are you?</p>
+</blockquote>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Username + Password
+        ↓
+Active Directory
+        ↓
+Identity verified
+</code></pre></div>
+<h3 id="authorization">Authorization</h3>
+<p>Authorization answers:</p>
+<blockquote>
+<p>What are you allowed to access?</p>
+</blockquote>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Emma Wilson
+     │
+     ├── Valid account
+     │
+     └── Member of Nurses group
+              ↓
+       Access clinical folder
+</code></pre></div>
+<p>A user can be successfully authenticated but still not be authorized to access a particular resource.</p>
+<hr />
+<h2 id="what-is-a-domain">What Is a Domain?</h2>
+<p>A domain is a logical administrative boundary containing identities and computers managed through Active Directory.</p>
+<p>For this simulated environment, we will use:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+</code></pre></div>
+<p>A user may eventually have an identity such as:</p>
+<div class="highlight"><pre><span></span><code>emma@hospital.local
+</code></pre></div>
+<p>or may sign in using a domain-qualified username such as:</p>
+<div class="highlight"><pre><span></span><code>HOSPITAL\emma
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p><code>hospital.local</code> is used here only as a simple learning-domain example.</p>
+<div class="highlight"><pre><span></span><code>Production organisations normally choose domain naming based on their real DNS and identity architecture rather than copying this lab name.
+</code></pre></div>
+<hr />
+<h2 id="what-is-a-domain-controller">What Is a Domain Controller?</h2>
+<p>A <strong>Domain Controller</strong>, or <strong>DC</strong>, is a server running Active Directory Domain Services for a domain.</p>
+<p>It helps provide services such as:</p>
+<ul>
+<li>authentication</li>
+<li>directory queries</li>
+<li>identity management</li>
+<li>security policy</li>
+<li>group membership information</li>
+<li>service discovery through DNS</li>
+</ul>
+<p>Our architecture will become:</p>
+<div class="highlight"><pre><span></span><code>Ubuntu / Client
+       │
+       │ Authentication or directory request
+       ▼
+Windows Server
+Domain Controller
+       │
+       └── Active Directory
+</code></pre></div>
+<hr />
+<h2 id="why-does-dns-matter">Why Does DNS Matter?</h2>
+<p>Active Directory depends heavily on DNS.</p>
+<p>Clients do not simply need to know an IP address.</p>
+<p>They need to discover services such as Domain Controllers.</p>
+<p>A client might ask:</p>
+<div class="highlight"><pre><span></span><code>Where is the Domain Controller
+for hospital.local?
+```
 
+DNS helps provide that information.
 
+That is why a system can have working internet access but still fail to join or use an Active Directory domain if its DNS configuration is incorrect.
+
+---
+
+## Before You Start
+
+Before installing Active Directory, confirm that:
+
+- Windows Server starts correctly
+- the server has a stable IP address
+- the subnet mask is correct
+- the default gateway is correct
+- basic network connectivity works
+- the server time is reasonably accurate
+
+You can inspect networking with:
+
+~~~powershell
+ipconfig /all
+</code></pre></div>
+<p>You can check the hostname with:</p>
+<div class="highlight"><pre><span></span><code><span class="n">hostname</span>
+</code></pre></div>
+<hr />
+<h2 id="step-1-open-server-manager">Step 1 - Open Server Manager</h2>
+<p>Sign in to Windows Server using the local Administrator account.</p>
+<p>Open:</p>
+<p><strong>Server Manager</strong></p>
+<p>Then select:</p>
+<p><strong>Manage → Add Roles and Features</strong></p>
+<p>This wizard allows Windows Server roles to be installed.</p>
+<hr />
+<h2 id="step-2-choose-the-installation-type">Step 2 - Choose the Installation Type</h2>
+<p>Select:</p>
+<p><strong>Role-based or feature-based installation</strong></p>
+<p>This option is used when adding a server role to the current Windows Server.</p>
+<p>Continue to the server selection screen.</p>
+<hr />
+<h2 id="step-3-select-the-server">Step 3 - Select the Server</h2>
+<p>Select the current Windows Server from the server pool.</p>
+<p>Confirm that you are installing the role on the intended machine.</p>
+<p>Then continue.</p>
+<hr />
+<h2 id="step-4-install-active-directory-domain-services">Step 4 - Install Active Directory Domain Services</h2>
+<p>From the list of server roles, select:</p>
+<p><strong>Active Directory Domain Services</strong></p>
+<p>Windows may ask to install additional management tools required by AD DS.</p>
+<p>Accept the required features.</p>
+<p>Then continue through the wizard.</p>
+<p>At this point, we are installing the software required to provide Active Directory.</p>
+<p>We have <strong>not created the domain yet</strong>.</p>
+<hr />
+<h2 id="step-5-complete-the-ad-ds-role-installation">Step 5 - Complete the AD DS Role Installation</h2>
+<p>Review the selected options and begin the installation.</p>
+<p>When the role installation finishes, Server Manager should display a notification indicating that additional configuration is required.</p>
+<p>The server now contains the AD DS software, but it is not yet acting as a Domain Controller.</p>
+<p>That happens during <strong>promotion</strong>.</p>
+<hr />
+<h2 id="what-does-promote-this-server-mean">What Does “Promote This Server” Mean?</h2>
+<p>Installing AD DS and creating a Domain Controller are related but different steps.</p>
+<div class="highlight"><pre><span></span><code>Install AD DS role
+        ↓
+Server gains directory-service software
+        ↓
+Promote server
+        ↓
+Server becomes Domain Controller
+</code></pre></div>
+<p>Promotion configures the server to provide Active Directory for a domain.</p>
+<hr />
+<h2 id="step-6-promote-the-server-to-a-domain-controller">Step 6 - Promote the Server to a Domain Controller</h2>
+<p>In Server Manager, select the notification flag.</p>
+<p>Choose:</p>
+<p><strong>Promote this server to a domain controller</strong></p>
+<p>The Active Directory Domain Services Configuration Wizard will open.</p>
+<hr />
+<h2 id="step-7-create-a-new-forest">Step 7 - Create a New Forest</h2>
+<p>Because this is the first Domain Controller in our environment, select:</p>
+<p><strong>Add a new forest</strong></p>
+<p>Enter the root domain name:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+</code></pre></div>
+<hr />
+<h2 id="what-is-a-forest">What Is a Forest?</h2>
+<p>A forest is the top-level Active Directory structure that can contain one or more domains.</p>
+<p>For this project:</p>
+<div class="highlight"><pre><span></span><code>Forest
+   │
+   └── hospital.local
+</code></pre></div>
+<p>Our environment only needs one domain, so the architecture remains simple.</p>
+<p>In larger organisations, Active Directory architectures can contain multiple domains.</p>
+<hr />
+<h2 id="step-8-configure-domain-controller-options">Step 8 - Configure Domain Controller Options</h2>
+<p>The wizard will display Domain Controller options.</p>
+<p>For this environment, the server can provide:</p>
+<ul>
+<li>Domain Name System (DNS)</li>
+<li>Global Catalog services</li>
+</ul>
+<p>You will also be asked to create a:</p>
+<p><strong>Directory Services Restore Mode (DSRM) password</strong></p>
+<p>DSRM is used for special Active Directory recovery and maintenance scenarios.</p>
+<p>Use a strong lab-specific password and store it safely.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>Do not reuse personal, university or workplace passwords in the lab.</p>
+<hr />
+<h2 id="step-9-review-the-dns-warning">Step 9 - Review the DNS Warning</h2>
+<p>During a new lab-domain installation, the wizard may display DNS-related warnings.</p>
+<p>Read the warning rather than automatically assuming the installation has failed.</p>
+<p>The new Domain Controller will install and configure DNS services required for the Active Directory environment.</p>
+<p>Continue after reviewing the configuration.</p>
+<hr />
+<h2 id="step-10-review-the-netbios-domain-name">Step 10 - Review the NetBIOS Domain Name</h2>
+<p>Windows will generate a NetBIOS domain name.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>HOSPITAL
+</code></pre></div>
+<p>This allows usernames to be represented in a format such as:</p>
+<div class="highlight"><pre><span></span><code>HOSPITAL\emma
+</code></pre></div>
+<p>The DNS-style domain name remains:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+</code></pre></div>
+<p>These are two ways of referring to the domain in different contexts.</p>
+<hr />
+<h2 id="step-11-complete-the-prerequisite-check">Step 11 - Complete the Prerequisite Check</h2>
+<p>Before installation continues, Windows performs prerequisite checks.</p>
+<p>The wizard checks whether the server is ready to become a Domain Controller.</p>
+<p>Review any warnings or errors.</p>
+<p>If the prerequisite check passes, continue with the installation.</p>
+<hr />
+<h2 id="step-12-restart-the-server">Step 12 - Restart the Server</h2>
+<p>During promotion, Windows configures:</p>
+<ul>
+<li>Active Directory Domain Services</li>
+<li>the new domain</li>
+<li>the directory database</li>
+<li>DNS integration</li>
+<li>Domain Controller services</li>
+</ul>
+<p>The server will restart.</p>
+<p>After the restart, the machine is no longer simply a standalone Windows Server.</p>
+<p>It is now a <strong>Domain Controller</strong> for the Active Directory domain.</p>
+<hr />
+<h2 id="step-13-sign-in-to-the-domain">Step 13 - Sign In to the Domain</h2>
+<p>After restart, examine the sign-in screen.</p>
+<p>You should now see the domain identity context.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>HOSPITAL\Administrator
+</code></pre></div>
+<p>This is different from signing into a purely local machine account.</p>
+<hr />
+<h2 id="step-14-verify-active-directory">Step 14 - Verify Active Directory</h2>
+<p>Open:</p>
+<p><strong>Server Manager → Tools</strong></p>
+<p>You should now see administrative tools such as:</p>
+<ul>
+<li>Active Directory Users and Computers</li>
+<li>Active Directory Administrative Center</li>
+<li>DNS</li>
+<li>Active Directory Domains and Trusts</li>
+<li>Active Directory Sites and Services</li>
+</ul>
+<p>Open:</p>
+<p><strong>Active Directory Users and Computers</strong></p>
+<p>You should see the domain:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+</code></pre></div>
+<p>This confirms that the Active Directory structure exists.</p>
+<hr />
+<h2 id="step-15-verify-active-directory-with-powershell">Step 15 - Verify Active Directory with PowerShell</h2>
+<p>PowerShell provides another way to inspect the environment.</p>
+<p>Open PowerShell as Administrator.</p>
+<p>Run:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADDomain</span>
+</code></pre></div>
+<p>This returns information about the Active Directory domain.</p>
+<p>You can also run:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADForest</span>
+</code></pre></div>
+<p>to inspect the forest.</p>
+<p>To inspect the Domain Controller:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADDomainController</span>
+</code></pre></div>
+<hr />
+<h2 id="why-use-both-gui-and-powershell">Why Use Both GUI and PowerShell?</h2>
+<p>Enterprise administrators often use both.</p>
+<h3 id="gui-tools">GUI tools</h3>
+<p>Useful for:</p>
+<ul>
+<li>learning the structure</li>
+<li>visual inspection</li>
+<li>occasional administration</li>
+<li>exploring object properties</li>
+</ul>
+<h3 id="powershell">PowerShell</h3>
+<p>Useful for:</p>
+<ul>
+<li>automation</li>
+<li>repeatable tasks</li>
+<li>bulk operations</li>
+<li>troubleshooting</li>
+<li>scripting</li>
+</ul>
+<p>Throughout this project, we will use both approaches.</p>
+<hr />
+<h2 id="step-16-open-dns-manager">Step 16 - Open DNS Manager</h2>
+<p>From Server Manager, open:</p>
+<p><strong>Tools → DNS</strong></p>
+<p>You should see DNS zones associated with the Active Directory environment.</p>
+<p>The domain:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+</code></pre></div>
+<p>should now be represented in DNS.</p>
+<p>This is an important moment in the project because Active Directory and DNS are now working together.</p>
+<hr />
+<h2 id="step-17-test-domain-dns">Step 17 - Test Domain DNS</h2>
+<p>Open PowerShell or Command Prompt.</p>
+<p>Try:</p>
+<div class="highlight"><pre><span></span><code><span class="n">nslookup</span> <span class="n">hospital</span><span class="p">.</span><span class="n">local</span>
+</code></pre></div>
+<p>You can also inspect the configured DNS server:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ipconfig</span> <span class="p">/</span><span class="n">all</span>
+</code></pre></div>
+<p>After promotion, the Domain Controller will normally use its own DNS service for Active Directory name resolution.</p>
+<hr />
+<h2 id="organizational-units">Organizational Units</h2>
+<p>Active Directory contains many types of objects.</p>
+<p>One particularly useful structure is the <strong>Organizational Unit</strong>, or <strong>OU</strong>.</p>
+<p>OUs allow administrators to organise directory objects logically.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+      │
+      ├── Doctors
+      ├── Nurses
+      ├── Pharmacy
+      └── IT
+</code></pre></div>
+<p>An OU is primarily an <strong>administrative container</strong>.</p>
+<p>It is not the same thing as a Security Group.</p>
+<hr />
+<h2 id="ou-vs-security-group">OU vs Security Group</h2>
+<p>This distinction is extremely important.</p>
+<h3 id="organizational-unit">Organizational Unit</h3>
+<p>Used primarily to organise and administer objects.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>OU: Nurses
+    ├── Emma Wilson
+    └── Sarah Jones
+</code></pre></div>
+<h3 id="security-group">Security Group</h3>
+<p>Used to assign permissions or represent access membership.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>Security Group: GG-Nurses
+       │
+       ├── Emma Wilson
+       └── Sarah Jones
+              ↓
+       Clinical Folder Access
+</code></pre></div>
+<p>So:</p>
+<div class="highlight"><pre><span></span><code>OU
+↓
+Organisation / Administration
+
+Security Group
+↓
+Access / Authorization
+</code></pre></div>
+<p>We will explore Security Groups properly in the next lesson.</p>
+<hr />
+<h2 id="step-18-create-the-hospital-ous">Step 18 - Create the Hospital OUs</h2>
+<p>Open:</p>
+<p><strong>Active Directory Users and Computers</strong></p>
+<p>Right-click the domain:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+</code></pre></div>
+<p>Choose:</p>
+<p><strong>New → Organizational Unit</strong></p>
+<p>Create example OUs such as:</p>
+<div class="highlight"><pre><span></span><code>Doctors
+Nurses
+Pharmacy
+IT
+</code></pre></div>
+<p>Your structure may look like:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+      │
+      ├── Doctors
+      ├── Nurses
+      ├── Pharmacy
+      └── IT
+</code></pre></div>
+<p>These OUs will later contain the simulated hospital identities.</p>
+<hr />
+<h2 id="why-organise-identities">Why Organise Identities?</h2>
+<p>Imagine managing thousands of identities in one flat list.</p>
+<p>That quickly becomes difficult.</p>
+<p>A directory structure makes it easier to understand where objects belong and where administrative rules may be applied.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Hospital
+   │
+   ├── Clinical Staff
+   │      ├── Doctors
+   │      └── Nurses
+   │
+   └── Technical Staff
+          └── IT
+</code></pre></div>
+<p>The exact structure will depend on an organisation's requirements.</p>
+<hr />
+<h2 id="how-active-directory-stores-identities">How Active Directory Stores Identities</h2>
+<p>An Active Directory user is more than a username.</p>
+<p>A directory object can contain information such as:</p>
+<ul>
+<li>first name</li>
+<li>surname</li>
+<li>username</li>
+<li>email address</li>
+<li>department</li>
+<li>group memberships</li>
+<li>password-related attributes</li>
+<li>account status</li>
+</ul>
+<p>Later, applications can query some of this information using protocols such as LDAP.</p>
+<p>That is how this Active Directory lesson connects to the future integration stage.</p>
+<hr />
+<h2 id="active-directory-and-ldap">Active Directory and LDAP</h2>
+<p>LDAP stands for <strong>Lightweight Directory Access Protocol</strong>.</p>
+<p>Active Directory supports LDAP so that systems can communicate with the directory.</p>
+<p>Later our Ubuntu integration machine will be able to make requests such as:</p>
+<div class="highlight"><pre><span></span><code>Ubuntu Application
+       │
+       │ LDAP
+       │ TCP 389
+       ▼
+Domain Controller
+       │
+       ▼
+Active Directory
+       │
+       └── User information
+</code></pre></div>
+<p>This is where our project moves from infrastructure administration toward software integration.</p>
+<hr />
+<h2 id="how-authentication-will-eventually-work">How Authentication Will Eventually Work</h2>
+<p>A simplified authentication flow may look like:</p>
+<div class="highlight"><pre><span></span><code>User
+ │
+ │ Credentials
+ ▼
+Application
+ │
+ │ Authentication request
+ ▼
+Active Directory
+ │
+ ├── Valid credentials → Success
+ │
+ └── Invalid credentials → Failure
+</code></pre></div>
+<p>Authentication only confirms identity.</p>
+<p>The application may still need group membership or other information to make authorization decisions.</p>
+<hr />
+<h2 id="troubleshooting-active-directory">Troubleshooting Active Directory</h2>
+<p>When Active Directory does not work, avoid assuming that AD DS itself is broken.</p>
+<p>Check the surrounding dependencies.</p>
+<h3 id="layer-1-server">Layer 1 - Server</h3>
+<p>Is Windows Server running?</p>
+<div class="highlight"><pre><span></span><code><span class="n">hostname</span>
+</code></pre></div>
+<h3 id="layer-2-network">Layer 2 - Network</h3>
+<p>Does the server have the correct IP configuration?</p>
+<div class="highlight"><pre><span></span><code><span class="n">ipconfig</span> <span class="p">/</span><span class="n">all</span>
+</code></pre></div>
+<h3 id="layer-3-dns">Layer 3 - DNS</h3>
+<p>Can the domain be resolved?</p>
+<div class="highlight"><pre><span></span><code><span class="n">nslookup</span> <span class="n">hospital</span><span class="p">.</span><span class="n">local</span>
+</code></pre></div>
+<h3 id="layer-4-active-directory">Layer 4 - Active Directory</h3>
+<p>Can PowerShell query the domain?</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADDomain</span>
+</code></pre></div>
+<h3 id="layer-5-service-or-application">Layer 5 - Service or Application</h3>
+<p>Can the external system reach the required service?</p>
+<p>Later we may test ports such as:</p>
+<div class="highlight"><pre><span></span><code>DNS   → TCP/UDP 53
+LDAP  → TCP 389
+LDAPS → TCP 636
+SMB   → TCP 445
+</code></pre></div>
+<p>This layered troubleshooting approach prevents us from blaming an application when the actual problem exists lower in the infrastructure.</p>
+<hr />
+<h2 id="time-synchronisation">Time Synchronisation</h2>
+<p>Accurate time is important in domain environments.</p>
+<p>Authentication systems such as Kerberos are sensitive to significant differences between system clocks.</p>
+<p>Check the Windows time service with:</p>
+<div class="highlight"><pre><span></span><code><span class="n">w32tm</span> <span class="p">/</span><span class="n">query</span> <span class="p">/</span><span class="n">status</span>
+</code></pre></div>
+<p>If authentication behaves unexpectedly, time synchronization should be part of the investigation.</p>
+<hr />
+<h2 id="what-you-should-understand">What You Should Understand</h2>
+<p>Before continuing, make sure you can explain:</p>
+<p><strong>What is Active Directory?</strong></p>
+<p>A centralized directory system used to manage identities, computers and other objects in a Windows enterprise environment.</p>
+<p><strong>What is AD DS?</strong></p>
+<p>The Windows Server role that provides Active Directory Domain Services.</p>
+<p><strong>What is a Domain Controller?</strong></p>
+<p>A server running AD DS that provides directory and authentication services for a domain.</p>
+<p><strong>What is a domain?</strong></p>
+<p>A logical Active Directory environment containing centrally managed identities and resources.</p>
+<p><strong>What is a forest?</strong></p>
+<p>The top-level Active Directory structure that can contain one or more domains.</p>
+<p><strong>Why does Active Directory depend on DNS?</strong></p>
+<p>Because clients use DNS to locate domain services, including Domain Controllers.</p>
+<p><strong>What is an OU?</strong></p>
+<p>A container used to organise and administer Active Directory objects.</p>
+<p><strong>Is an OU the same as a Security Group?</strong></p>
+<p>No.</p>
+<p>OUs organise objects.</p>
+<p>Security Groups are commonly used to assign permissions and represent authorization membership.</p>
+<hr />
+<h2 id="checkpoint">Checkpoint</h2>
+<p>Before moving on, confirm that:</p>
+<ul>
+<li>AD DS is installed</li>
+<li>Windows Server has been promoted to a Domain Controller</li>
+<li>the <code>hospital.local</code> domain exists</li>
+<li>DNS is installed and working</li>
+<li>Active Directory Users and Computers opens</li>
+<li><code>Get-ADDomain</code> returns domain information</li>
+<li><code>Get-ADForest</code> returns forest information</li>
+<li>the hospital OUs exist</li>
+<li>you understand the difference between an OU and a Security Group</li>
+</ul>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<p>Imagine a new nurse called <strong>Emma Wilson</strong> joins the hospital.</p>
+<p>Before creating anything, decide:</p>
+<ol>
+<li>Where should her Active Directory user object be organised?</li>
+<li>What determines whether she is allowed to access a clinical folder?</li>
+<li>Which concept verifies her identity?</li>
+<li>Which concept controls what she can access?</li>
+</ol>
+<p>A possible answer is:</p>
+<div class="highlight"><pre><span></span><code>Emma Wilson
+    │
+    ├── User object → Nurses OU
+    │
+    ├── Authentication → confirms identity
+    │
+    └── Security Group membership
+                    ↓
+                Authorization
+                    ↓
+             Resource access
+</code></pre></div>
+<p>In the next lesson, you will build exactly this model.</p>
+<hr />
+<h2 id="next-step">Next Step</h2>
+<p>The hospital now has a centralized identity system.</p>
+<p>Next, we will create users and Security Groups, then use group membership to control access.</p>
+<p><a class="md-button md-button--primary" href="../05-access-management/">Continue to Access Management →</a></p>
 
 
 
