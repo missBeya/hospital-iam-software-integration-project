@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#07-prepare-the-ubuntu-integration-machine" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -592,6 +597,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 - Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -609,6 +634,543 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-are" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where We Are
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-a-separate-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use a Separate Machine?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-is-more-than-installing-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Is More Than Installing Software
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-start-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Start Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-check-the-hostname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Check the Hostname
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-inspect-the-operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Inspect the Operating System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-inspect-cpu-and-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Inspect CPU and Memory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-inspect-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Inspect Storage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-check-resources-before-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Check Resources Before Integration?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-inspect-the-ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Inspect the IP Address
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-inspect-the-default-route" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Inspect the Default Route
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-test-basic-network-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Test Basic Network Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-test-dns-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Test DNS Resolution
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 9 - Test DNS Resolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#situation-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Situation A
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#situation-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Situation B
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-inspect-dns-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Inspect DNS Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-dns-vs-active-directory-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External DNS vs Active Directory DNS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-update-the-package-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 - Update the Package Index
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-sudo-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Does sudo Mean?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-apt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is APT?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-12-install-curl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 12 - Install curl
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-13-install-netcat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 13 - Install Netcat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-port-testing-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Port Testing Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-14-install-ldap-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 14 - Install LDAP Utilities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-15-verify-installed-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 15 - Verify Installed Packages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-16-identify-the-domain-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 16 - Identify the Domain Controller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-17-test-ubuntu-domain-controller-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 17 - Test Ubuntu → Domain Controller Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-18-test-the-ldap-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 18 - Test the LDAP Port
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reachability-vs-service-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reachability vs Service Availability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reachability vs Service Availability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netcat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Netcat
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LDAP Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-19-test-domain-name-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 19 - Test Domain Name Resolution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-20-check-system-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 20 - Check System Time
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-readiness-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Readiness Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-troubleshooting-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Troubleshooting Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#another-troubleshooting-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Another Troubleshooting Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-an-implementation-engineer-is-doing-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What an Implementation Engineer Is Doing Here
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-not-troubleshoot-credentials-too-early" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do Not Troubleshoot Credentials Too Early
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-current-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Our Current Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -838,6 +1400,534 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-we-are" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where We Are
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-a-separate-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Use a Separate Machine?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-is-more-than-installing-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Is More Than Installing Software
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-start-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Start Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-check-the-hostname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Check the Hostname
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-inspect-the-operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Inspect the Operating System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-inspect-cpu-and-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Inspect CPU and Memory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-inspect-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Inspect Storage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-check-resources-before-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Check Resources Before Integration?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-inspect-the-ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Inspect the IP Address
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-inspect-the-default-route" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Inspect the Default Route
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-test-basic-network-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Test Basic Network Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-test-dns-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Test DNS Resolution
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 9 - Test DNS Resolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#situation-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Situation A
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#situation-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Situation B
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-inspect-dns-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Inspect DNS Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-dns-vs-active-directory-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External DNS vs Active Directory DNS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-11-update-the-package-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 11 - Update the Package Index
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-sudo-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Does sudo Mean?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-apt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is APT?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-12-install-curl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 12 - Install curl
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-13-install-netcat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 13 - Install Netcat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-port-testing-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Port Testing Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-14-install-ldap-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 14 - Install LDAP Utilities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-15-verify-installed-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 15 - Verify Installed Packages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-16-identify-the-domain-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 16 - Identify the Domain Controller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-17-test-ubuntu-domain-controller-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 17 - Test Ubuntu → Domain Controller Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-18-test-the-ldap-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 18 - Test the LDAP Port
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reachability-vs-service-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reachability vs Service Availability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reachability vs Service Availability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netcat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Netcat
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LDAP Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-19-test-domain-name-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 19 - Test Domain Name Resolution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-20-check-system-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 20 - Check System Time
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-readiness-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration Readiness Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-troubleshooting-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A Troubleshooting Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#another-troubleshooting-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Another Troubleshooting Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-an-implementation-engineer-is-doing-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What an Implementation Engineer Is Doing Here
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-not-troubleshoot-credentials-too-early" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do Not Troubleshoot Credentials Too Early
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-current-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Our Current Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -865,9 +1955,649 @@
   
 
 
-  <h1>07 - Ubuntu</h1>
+<h1 id="07-prepare-the-ubuntu-integration-machine">07 - Prepare the Ubuntu Integration Machine</h1>
+<h2 id="goal">Goal</h2>
+<p>In this lesson, you will prepare an Ubuntu virtual machine to act as an <strong>external integration system</strong>.</p>
+<p>This machine will later communicate with the Windows Server and Active Directory environment.</p>
+<p>By the end of the lesson, you should understand:</p>
+<ul>
+<li>why we use a separate integration machine</li>
+<li>how to inspect a Linux system before integration</li>
+<li>how to verify networking</li>
+<li>how to verify DNS</li>
+<li>how to install integration and troubleshooting tools</li>
+<li>how to test reachability to the Domain Controller</li>
+<li>why application integration should be tested layer by layer</li>
+</ul>
+<hr />
+<h2 id="where-we-are">Where We Are</h2>
+<p>Our hospital environment currently contains:</p>
+<div class="highlight"><pre><span></span><code>Windows Server
+      │
+      ├── Active Directory
+      ├── DNS
+      ├── Users
+      ├── Security Groups
+      └── SMB Resources
+</code></pre></div>
+<p>Until now, most administration has happened directly on Windows Server.</p>
+<p>That changes here.</p>
+<p>We will introduce a separate Linux system:</p>
+<div class="highlight"><pre><span></span><code>Hospital Infrastructure
+        │
+        ├── Windows Server
+        │      └── Active Directory
+        │
+        └── Ubuntu
+               └── Integration System
+</code></pre></div>
+<p>Ubuntu represents a system or application that needs to communicate with infrastructure it does not own.</p>
+<hr />
+<h2 id="why-use-a-separate-machine">Why Use a Separate Machine?</h2>
+<p>Imagine a hospital purchases a new software product.</p>
+<p>The application might need to:</p>
+<ul>
+<li>find users in Active Directory</li>
+<li>authenticate users</li>
+<li>inspect group membership</li>
+<li>connect to existing servers</li>
+<li>communicate through specific network ports</li>
+</ul>
+<p>The application is not installed inside the Domain Controller itself.</p>
+<p>Instead:</p>
+<div class="highlight"><pre><span></span><code>Application Server
+       │
+       │ requests
+       ▼
+Existing Hospital Infrastructure
+       │
+       └── Active Directory
+</code></pre></div>
+<p>Our Ubuntu VM simulates this application-side environment.</p>
+<hr />
+<h2 id="integration-is-more-than-installing-software">Integration Is More Than Installing Software</h2>
+<p>A common mistake is to think:</p>
+<blockquote>
+<p>The application is installed, so the integration is complete.</p>
+</blockquote>
+<p>Installation is only one part.</p>
+<p>A successful integration may depend on:</p>
+<div class="highlight"><pre><span></span><code>Application
+     ↓
+Operating System
+     ↓
+Network
+     ↓
+DNS
+     ↓
+Firewall / Ports
+     ↓
+Authentication
+     ↓
+Directory Service
+</code></pre></div>
+<p>If one layer fails, the application may stop working.</p>
+<p>That is why we verify the environment before attempting LDAP integration.</p>
+<hr />
+<h2 id="before-you-start">Before You Start</h2>
+<p>You should already have:</p>
+<ul>
+<li>the Ubuntu VM created</li>
+<li>Windows Server running</li>
+<li>Active Directory configured</li>
+<li>a working virtual network</li>
+<li>the Domain Controller IP address</li>
+<li>both VMs connected to compatible virtual networks</li>
+</ul>
+<p>Do not copy IP addresses from this guide.</p>
+<p>Use the addresses from your own environment.</p>
+<hr />
+<h2 id="step-1-start-ubuntu">Step 1 - Start Ubuntu</h2>
+<p>Start the Ubuntu VM and sign in.</p>
+<p>Open Terminal.</p>
+<p>On many Ubuntu desktop systems, you can open Terminal using:</p>
+<div class="highlight"><pre><span></span><code>Ctrl + Alt + T
+</code></pre></div>
+<p>The terminal gives us direct access to system and networking tools.</p>
+<hr />
+<h2 id="step-2-check-the-hostname">Step 2 - Check the Hostname</h2>
+<p>Run:</p>
+<div class="highlight"><pre><span></span><code>hostname
+</code></pre></div>
+<p>The hostname identifies the Linux machine.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>ubuntu
+</code></pre></div>
+<p>For a larger environment, you might eventually use a more descriptive name such as:</p>
+<div class="highlight"><pre><span></span><code>integration01
+</code></pre></div>
+<p>or:</p>
+<div class="highlight"><pre><span></span><code>app01
+</code></pre></div>
+<p>A clear hostname makes troubleshooting easier when multiple machines exist.</p>
+<hr />
+<h2 id="step-3-inspect-the-operating-system">Step 3 - Inspect the Operating System</h2>
+<p>Check the installed Ubuntu version:</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/etc/os-release
+</code></pre></div>
+<p>This helps identify:</p>
+<ul>
+<li>operating system</li>
+<li>distribution</li>
+<li>version</li>
+</ul>
+<p>Knowing the operating system version can matter when troubleshooting package compatibility or application requirements.</p>
+<hr />
+<h2 id="step-4-inspect-cpu-and-memory">Step 4 - Inspect CPU and Memory</h2>
+<p>Check CPU information:</p>
+<div class="highlight"><pre><span></span><code>lscpu
+</code></pre></div>
+<p>Check memory:</p>
+<div class="highlight"><pre><span></span><code>free<span class="w"> </span>-h
+</code></pre></div>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>Mem:
+total        4.0Gi
+available    2.1Gi
+</code></pre></div>
+<p>The <code>-h</code> option means:</p>
+<p><strong>human readable</strong></p>
+<p>so values are displayed using units such as MB or GB.</p>
+<hr />
+<h2 id="step-5-inspect-storage">Step 5 - Inspect Storage</h2>
+<p>Run:</p>
+<div class="highlight"><pre><span></span><code>lsblk
+</code></pre></div>
+<p>This displays block devices such as disks and partitions.</p>
+<p>You can also check filesystem usage:</p>
+<div class="highlight"><pre><span></span><code>df<span class="w"> </span>-h
+</code></pre></div>
+<p>These commands answer different questions.</p>
+<p><code>lsblk</code> helps show:</p>
+<blockquote>
+<p>What disks exist?</p>
+</blockquote>
+<p><code>df -h</code> helps show:</p>
+<blockquote>
+<p>How much filesystem space is available?</p>
+</blockquote>
+<hr />
+<h2 id="why-check-resources-before-integration">Why Check Resources Before Integration?</h2>
+<p>Applications can fail because of infrastructure limitations.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Application fails
+      │
+      ├── No disk space?
+      ├── Not enough memory?
+      ├── Wrong OS version?
+      └── Missing dependency?
+</code></pre></div>
+<p>Before blaming the network or Active Directory, understand the machine hosting the application.</p>
+<hr />
+<h2 id="step-6-inspect-the-ip-address">Step 6 - Inspect the IP Address</h2>
+<p>Run:</p>
+<div class="highlight"><pre><span></span><code>ip<span class="w"> </span>addr
+</code></pre></div>
+<p>Look for the active network interface.</p>
+<p>You may see an IPv4 address similar to:</p>
+<div class="highlight"><pre><span></span><code>inet 192.168.100.20/24
+</code></pre></div>
+<p>Your address will probably be different.</p>
+<p>The important thing is to identify:</p>
+<ul>
+<li>the interface</li>
+<li>IPv4 address</li>
+<li>subnet</li>
+</ul>
+<hr />
+<h2 id="step-7-inspect-the-default-route">Step 7 - Inspect the Default Route</h2>
+<p>Run:</p>
+<div class="highlight"><pre><span></span><code>ip<span class="w"> </span>route
+</code></pre></div>
+<p>You may see:</p>
+<div class="highlight"><pre><span></span><code>default via 192.168.100.1
+</code></pre></div>
+<p>This tells you which gateway Ubuntu uses to reach destinations outside its local subnet.</p>
+<hr />
+<h2 id="step-8-test-basic-network-connectivity">Step 8 - Test Basic Network Connectivity</h2>
+<p>Start by testing the default gateway:</p>
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span>&lt;gateway-ip&gt;
+</code></pre></div>
+<p>Then test an external IP address:</p>
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">8</span>.8.8.8
+</code></pre></div>
+<p>The <code>-c 4</code> option tells Linux to send four ICMP requests and then stop.</p>
+<p>If the external IP responds, basic IP connectivity is working.</p>
+<hr />
+<h2 id="step-9-test-dns-resolution">Step 9 - Test DNS Resolution</h2>
+<p>Now test a hostname.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>getent<span class="w"> </span>hosts<span class="w"> </span>microsoft.com
+</code></pre></div>
+<p>or, if <code>nslookup</code> is installed:</p>
+<div class="highlight"><pre><span></span><code>nslookup<span class="w"> </span>microsoft.com
+</code></pre></div>
+<p>This helps separate two different situations.</p>
+<h3 id="situation-a">Situation A</h3>
+<div class="highlight"><pre><span></span><code>ping 8.8.8.8
+SUCCESS
 
+DNS lookup
+SUCCESS
+</code></pre></div>
+<p>Network and DNS appear functional.</p>
+<h3 id="situation-b">Situation B</h3>
+<div class="highlight"><pre><span></span><code>ping 8.8.8.8
+SUCCESS
 
+DNS lookup
+FAIL
+</code></pre></div>
+<p>Basic connectivity works, but DNS requires investigation.</p>
+<hr />
+<h2 id="step-10-inspect-dns-configuration">Step 10 - Inspect DNS Configuration</h2>
+<p>On many modern Ubuntu systems:</p>
+<div class="highlight"><pre><span></span><code>resolvectl<span class="w"> </span>status
+</code></pre></div>
+<p>Look for the DNS servers associated with the active interface.</p>
+<p>Later, when Ubuntu needs to locate Active Directory resources by domain name, DNS configuration becomes especially important.</p>
+<hr />
+<h2 id="external-dns-vs-active-directory-dns">External DNS vs Active Directory DNS</h2>
+<p>There is an important difference.</p>
+<p>Public DNS helps resolve names such as:</p>
+<div class="highlight"><pre><span></span><code>github.com
+ubuntu.com
+microsoft.com
+</code></pre></div>
+<p>Active Directory DNS helps locate internal resources such as:</p>
+<div class="highlight"><pre><span></span><code>hospital.local
+dc01.hospital.local
+</code></pre></div>
+<p>Our Ubuntu integration system will eventually need to understand the hospital domain.</p>
+<hr />
+<h2 id="step-11-update-the-package-index">Step 11 - Update the Package Index</h2>
+<p>Before installing additional tools:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
+<p>This does not automatically upgrade every application.</p>
+<p>It refreshes Ubuntu's information about the packages available from configured repositories.</p>
+<hr />
+<h2 id="what-does-sudo-mean">What Does <code>sudo</code> Mean?</h2>
+<p>Some system operations require administrative privileges.</p>
+<p><code>sudo</code> allows an authorized user to execute a command with elevated privileges.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>apt<span class="w"> </span>install<span class="w"> </span>...
+</code></pre></div>
+<p>may fail for a normal user.</p>
+<p>Using:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>...
+</code></pre></div>
+<p>allows the package manager to make system-level changes.</p>
+<hr />
+<h2 id="what-is-apt">What Is APT?</h2>
+<p>APT is Ubuntu's package-management system.</p>
+<p>It allows software packages to be:</p>
+<ul>
+<li>installed</li>
+<li>updated</li>
+<li>removed</li>
+<li>searched</li>
+</ul>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>curl
+</code></pre></div>
+<p>asks APT to install the <code>curl</code> package.</p>
+<hr />
+<h2 id="step-12-install-curl">Step 12 - Install curl</h2>
+<p>Install:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>curl
+</code></pre></div>
+<p><code>curl</code> is useful for testing HTTP and HTTPS services.</p>
+<p>Later, if an application exposes a web endpoint or API, <code>curl</code> provides a quick way to verify whether the service responds.</p>
+<p>Verify it:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>--version
+</code></pre></div>
+<hr />
+<h2 id="step-13-install-netcat">Step 13 - Install Netcat</h2>
+<p>Install:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>netcat-openbsd
+</code></pre></div>
+<p>Netcat gives us the <code>nc</code> command.</p>
+<p>It is extremely useful for checking whether a specific TCP port is reachable.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>nc<span class="w"> </span>-zv<span class="w"> </span>&lt;server-ip&gt;<span class="w"> </span><span class="m">389</span>
+</code></pre></div>
+<p>This does not perform an LDAP login.</p>
+<p>It asks a more basic question:</p>
+<blockquote>
+<p>Can Ubuntu establish a network connection to TCP port 389?</p>
+</blockquote>
+<hr />
+<h2 id="why-port-testing-matters">Why Port Testing Matters</h2>
+<p>Imagine:</p>
+<div class="highlight"><pre><span></span><code>ping Domain Controller
+SUCCESS
+</code></pre></div>
+<p>but:</p>
+<div class="highlight"><pre><span></span><code>nc -zv DomainController 389
+FAIL
+</code></pre></div>
+<p>That tells us something important.</p>
+<p>The machine itself may be reachable, but the LDAP service is not reachable on the required TCP port.</p>
+<p>Possible causes include:</p>
+<ul>
+<li>firewall</li>
+<li>service not listening</li>
+<li>wrong port</li>
+<li>wrong IP address</li>
+<li>routing/security configuration</li>
+</ul>
+<hr />
+<h2 id="step-14-install-ldap-utilities">Step 14 - Install LDAP Utilities</h2>
+<p>Install:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ldap-utils
+</code></pre></div>
+<p>This provides tools such as:</p>
+<div class="highlight"><pre><span></span><code>ldapsearch
+</code></pre></div>
+<p>We will use <code>ldapsearch</code> in the next lesson to communicate directly with Active Directory.</p>
+<p>Verify:</p>
+<div class="highlight"><pre><span></span><code>ldapsearch<span class="w"> </span>-VV
+</code></pre></div>
+<p>At this stage, we only want to confirm that the tool is available.</p>
+<hr />
+<h2 id="step-15-verify-installed-packages">Step 15 - Verify Installed Packages</h2>
+<p>You can check whether a command exists using:</p>
+<div class="highlight"><pre><span></span><code>which<span class="w"> </span>curl
+</code></pre></div>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>which<span class="w"> </span>ldapsearch
+</code></pre></div>
+<p>You can also inspect installed packages:</p>
+<div class="highlight"><pre><span></span><code>apt<span class="w"> </span>list<span class="w"> </span>--installed<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>ldap-utils
+</code></pre></div>
+<p>This is useful when troubleshooting:</p>
+<blockquote>
+<p>Is the application/tool actually installed?</p>
+</blockquote>
+<p>rather than assuming it is.</p>
+<hr />
+<h2 id="step-16-identify-the-domain-controller">Step 16 - Identify the Domain Controller</h2>
+<p>Before testing integration, record the Domain Controller's:</p>
+<ul>
+<li>hostname</li>
+<li>IP address</li>
+<li>Active Directory domain</li>
+</ul>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Hostname: DC01
+Domain: hospital.local
+IP: &lt;your-dc-ip&gt;
+</code></pre></div>
+<p>Do not guess these values.</p>
+<p>Verify them from Windows Server.</p>
+<p>On the Domain Controller:</p>
+<div class="highlight"><pre><span></span><code><span class="n">hostname</span>
+</code></pre></div>
+<p>and:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ipconfig</span>
+</code></pre></div>
+<hr />
+<h2 id="step-17-test-ubuntu-domain-controller-connectivity">Step 17 - Test Ubuntu → Domain Controller Connectivity</h2>
+<p>From Ubuntu:</p>
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span>&lt;domain-controller-ip&gt;
+</code></pre></div>
+<p>This tests basic IP reachability.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Ubuntu
+   │
+   │ ICMP
+   ▼
+Domain Controller
+</code></pre></div>
+<p>If this test fails, there is little value troubleshooting LDAP credentials yet.</p>
+<p>First investigate networking.</p>
+<hr />
+<h2 id="step-18-test-the-ldap-port">Step 18 - Test the LDAP Port</h2>
+<p>Once IP connectivity works:</p>
+<div class="highlight"><pre><span></span><code>nc<span class="w"> </span>-zv<span class="w"> </span>&lt;domain-controller-ip&gt;<span class="w"> </span><span class="m">389</span>
+</code></pre></div>
+<p>Expected successful output may resemble:</p>
+<div class="highlight"><pre><span></span><code>Connection to &lt;server&gt; 389 port [tcp/ldap] succeeded!
+</code></pre></div>
+<p>Now we have proven something more specific.</p>
+<div class="highlight"><pre><span></span><code>Ubuntu
+   │
+   │ TCP 389
+   ▼
+Domain Controller
+   │
+   └── LDAP service reachable
+</code></pre></div>
+<p>This still does not prove that authentication will succeed.</p>
+<p>That comes later.</p>
+<hr />
+<h2 id="reachability-vs-service-availability">Reachability vs Service Availability</h2>
+<p>Keep these tests separate.</p>
+<h3 id="ping">Ping</h3>
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span>&lt;dc-ip&gt;
+</code></pre></div>
+<p>asks:</p>
+<blockquote>
+<p>Can I reach this host at the IP layer?</p>
+</blockquote>
+<h3 id="netcat">Netcat</h3>
+<div class="highlight"><pre><span></span><code>nc<span class="w"> </span>-zv<span class="w"> </span>&lt;dc-ip&gt;<span class="w"> </span><span class="m">389</span>
+</code></pre></div>
+<p>asks:</p>
+<blockquote>
+<p>Can I reach this specific TCP service?</p>
+</blockquote>
+<h3 id="ldap-search">LDAP Search</h3>
+<div class="highlight"><pre><span></span><code>ldapsearch ...
+</code></pre></div>
+<p>will later ask:</p>
+<blockquote>
+<p>Can I actually communicate with the directory service?</p>
+</blockquote>
+<p>These tests move progressively higher through the technology stack.</p>
+<hr />
+<h2 id="step-19-test-domain-name-resolution">Step 19 - Test Domain Name Resolution</h2>
+<p>If DNS is configured to use the Active Directory DNS server, try:</p>
+<div class="highlight"><pre><span></span><code>getent<span class="w"> </span>hosts<span class="w"> </span>hospital.local
+</code></pre></div>
+<p>and potentially:</p>
+<div class="highlight"><pre><span></span><code>getent<span class="w"> </span>hosts<span class="w"> </span>dc01.hospital.local
+</code></pre></div>
+<p>If IP connectivity works but internal domain names cannot be resolved, investigate DNS.</p>
+<p>This is a common integration issue.</p>
+<hr />
+<h2 id="step-20-check-system-time">Step 20 - Check System Time</h2>
+<p>Run:</p>
+<div class="highlight"><pre><span></span><code>timedatectl
+</code></pre></div>
+<p>Look for:</p>
+<ul>
+<li>local time</li>
+<li>time zone</li>
+<li>synchronization status</li>
+</ul>
+<p>Time matters in enterprise authentication environments.</p>
+<p>Large clock differences between systems can cause authentication problems, particularly when protocols such as Kerberos are involved.</p>
+<hr />
+<h2 id="integration-readiness-checklist">Integration Readiness Checklist</h2>
+<p>At this point, do not ask:</p>
+<blockquote>
+<p>Does LDAP authentication work?</p>
+</blockquote>
+<p>yet.</p>
+<p>First verify the lower layers.</p>
+<div class="highlight"><pre><span></span><code>Ubuntu VM running
+       ↓
+Resources available
+       ↓
+IP configured
+       ↓
+Gateway working
+       ↓
+DNS working
+       ↓
+Domain Controller reachable
+       ↓
+TCP 389 reachable
+       ↓
+LDAP tools installed
+       ↓
+Ready for directory integration
+</code></pre></div>
+<hr />
+<h2 id="a-troubleshooting-example">A Troubleshooting Example</h2>
+<p>Imagine:</p>
+<div class="highlight"><pre><span></span><code>Internet access: YES
+
+ping DC IP: YES
+
+nc DC-IP 389: NO
+</code></pre></div>
+<p>What can we conclude?</p>
+<p>We probably do <strong>not</strong> have a general internet problem.</p>
+<p>We probably do <strong>not</strong> have complete network isolation from the Domain Controller.</p>
+<p>The failure is more specific:</p>
+<div class="highlight"><pre><span></span><code>Ubuntu
+   │
+   X TCP 389
+   │
+Domain Controller
+</code></pre></div>
+<p>So investigate the service/port layer.</p>
+<hr />
+<h2 id="another-troubleshooting-example">Another Troubleshooting Example</h2>
+<p>Imagine:</p>
+<div class="highlight"><pre><span></span><code>ping DC IP
+SUCCESS
+
+getent hosts dc01.hospital.local
+FAIL
+</code></pre></div>
+<p>That points toward:</p>
+<div class="highlight"><pre><span></span><code>DNS / name resolution
+</code></pre></div>
+<p>rather than basic IP connectivity.</p>
+<p>This is why integration engineers test one layer at a time.</p>
+<hr />
+<h2 id="what-an-implementation-engineer-is-doing-here">What an Implementation Engineer Is Doing Here</h2>
+<p>Notice that we have not changed Active Directory yet.</p>
+<p>Instead, we are examining the environment into which software will be integrated.</p>
+<p>We are asking questions such as:</p>
+<ul>
+<li>What OS is running?</li>
+<li>What IP address does the application host have?</li>
+<li>Which DNS server is configured?</li>
+<li>Can it reach the customer infrastructure?</li>
+<li>Are required ports available?</li>
+<li>Are required packages installed?</li>
+<li>Is system time correct?</li>
+</ul>
+<p>This type of environmental discovery helps prevent incorrect assumptions during implementation.</p>
+<hr />
+<h2 id="do-not-troubleshoot-credentials-too-early">Do Not Troubleshoot Credentials Too Early</h2>
+<p>Suppose an application reports:</p>
+<div class="highlight"><pre><span></span><code>Authentication failed
+</code></pre></div>
+<p>It is tempting to immediately reset a password.</p>
+<p>But the real failure might be:</p>
+<div class="highlight"><pre><span></span><code>Wrong DNS
+Blocked TCP 389
+Wrong server IP
+LDAP service unavailable
+Incorrect Base DN
+Wrong credentials
+</code></pre></div>
+<p>Therefore troubleshooting should move systematically through the layers.</p>
+<hr />
+<h2 id="our-current-architecture">Our Current Architecture</h2>
+<p>The environment should now resemble:</p>
+<div class="highlight"><pre><span></span><code>Ubuntu Integration Machine
+       │
+       │ Network available
+       │ DNS available
+       │ LDAP tools installed
+       │ TCP 389 tested
+       ▼
+Windows Server
+       │
+       ├── DNS
+       └── Active Directory
+</code></pre></div>
+<p>The machines are ready for application-layer integration.</p>
+<hr />
+<h2 id="what-you-should-understand">What You Should Understand</h2>
+<p>Before continuing, make sure you can explain:</p>
+<p><strong>Why do we have Ubuntu?</strong></p>
+<p>It represents an external application or integration system that needs to communicate with existing hospital infrastructure.</p>
+<p><strong>What does <code>ip addr</code> tell us?</strong></p>
+<p>It shows network interfaces and IP addresses.</p>
+<p><strong>What does <code>ip route</code> tell us?</strong></p>
+<p>It shows how traffic is routed, including the default gateway.</p>
+<p><strong>What does <code>ping</code> test?</strong></p>
+<p>Basic IP reachability using ICMP.</p>
+<p><strong>What does <code>nc -zv &lt;server&gt; 389</code> test?</strong></p>
+<p>Whether a TCP connection can be established to the LDAP service port.</p>
+<p><strong>What does <code>ldap-utils</code> provide?</strong></p>
+<p>Command-line tools for interacting with LDAP services, including <code>ldapsearch</code>.</p>
+<p><strong>Why check DNS separately from connectivity?</strong></p>
+<p>Because a host may be reachable by IP while name resolution is failing.</p>
+<p><strong>Why check system time?</strong></p>
+<p>Because enterprise authentication systems may depend on reasonably synchronized clocks.</p>
+<hr />
+<h2 id="checkpoint">Checkpoint</h2>
+<p>Before moving on, confirm that:</p>
+<ul>
+<li>Ubuntu boots successfully</li>
+<li>you can open Terminal</li>
+<li>the hostname is known</li>
+<li>the Ubuntu version is known</li>
+<li>CPU, RAM and disk can be inspected</li>
+<li>Ubuntu has an IP address</li>
+<li>the gateway is known</li>
+<li>external connectivity can be tested</li>
+<li>DNS can be inspected</li>
+<li><code>curl</code> is installed</li>
+<li><code>nc</code> is installed</li>
+<li><code>ldapsearch</code> is installed</li>
+<li>the Domain Controller IP is known</li>
+<li>Ubuntu can test reachability to the Domain Controller</li>
+<li>TCP port 389 can be tested</li>
+<li>system time has been checked</li>
+</ul>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<p>Consider this output:</p>
+<div class="highlight"><pre><span></span><code>ping 172.16.203.10
+SUCCESS
+
+nc -zv 172.16.203.10 389
+FAILED
+</code></pre></div>
+<p>Answer:</p>
+<ol>
+<li>Can Ubuntu reach the Domain Controller at the network layer?</li>
+<li>Does successful ping prove LDAP works?</li>
+<li>Which layer appears to have the problem?</li>
+<li>Should you start changing the LDAP username and password yet?</li>
+</ol>
+<p>The answer to question 4 is:</p>
+<blockquote>
+<p>Not yet.</p>
+</blockquote>
+<p>First determine why the required LDAP TCP port cannot be reached.</p>
+<hr />
+<h2 id="next-step">Next Step</h2>
+<p>The Ubuntu integration machine is prepared.</p>
+<p>We have verified the operating system, resources, networking, DNS, required tools and the path toward the Domain Controller.</p>
+<p>Next, we will move from infrastructure testing to actual directory integration.</p>
+<p>Ubuntu will communicate with Active Directory using <strong>LDAP</strong>.</p>
+<p><a class="md-button md-button--primary" href="../08-ldap-integration/">Continue to LDAP Integration →</a></p>
 
 
 
