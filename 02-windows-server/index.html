@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#02-windows-server-setup" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -334,6 +339,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 - Windows Server
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -351,6 +376,229 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-start-the-windows-server-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Start the Windows Server VM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-choose-the-windows-server-edition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Choose the Windows Server Edition
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2 - Choose the Windows Server Edition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desktop-experience-vs-server-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desktop Experience vs Server Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-choose-the-installation-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Choose the Installation Type
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-select-the-virtual-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Select the Virtual Disk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-complete-the-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Complete the Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-sign-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Sign In
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-inspect-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Inspect the Server
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-check-the-computer-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Check the Computer Name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-inspect-the-network-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Inspect the Network Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-check-internet-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Check Internet Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-create-a-snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional - Create a Snapshot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -838,6 +1086,220 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-start-the-windows-server-vm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 - Start the Windows Server VM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-choose-the-windows-server-edition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 - Choose the Windows Server Edition
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2 - Choose the Windows Server Edition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desktop-experience-vs-server-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desktop Experience vs Server Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-choose-the-installation-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 - Choose the Installation Type
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-select-the-virtual-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 - Select the Virtual Disk
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-complete-the-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 - Complete the Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-sign-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 - Sign In
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-inspect-the-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7 - Inspect the Server
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-check-the-computer-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8 - Check the Computer Name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-inspect-the-network-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9 - Inspect the Network Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-check-internet-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10 - Check Internet Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-create-a-snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional - Create a Snapshot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-understand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You Should Understand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Step
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -865,9 +1327,195 @@
   
 
 
-  <h1>02 - Windows Server</h1>
-
-
+<h1 id="02-windows-server-setup">02 - Windows Server Setup</h1>
+<h2 id="goal">Goal</h2>
+<p>In this lesson, you will install and prepare Windows Server 2022 for the hospital identity environment.</p>
+<p>Later, this server will become the <strong>Domain Controller</strong> responsible for services such as:</p>
+<ul>
+<li>Active Directory Domain Services</li>
+<li>DNS</li>
+<li>user authentication</li>
+<li>identity management</li>
+<li>group-based access control</li>
+</ul>
+<p>At this stage, we are only preparing the operating system.</p>
+<hr />
+<h2 id="before-you-start">Before You Start</h2>
+<p>You should already have:</p>
+<ul>
+<li>a virtualisation platform installed</li>
+<li>a Windows Server virtual machine</li>
+<li>a Windows Server 2022 installation ISO attached to the VM</li>
+<li>sufficient CPU, memory, and disk resources allocated</li>
+</ul>
+<p>If you have not created the VM yet, complete the <a href="../01-virtualisation-setup/">Virtualisation Setup</a> lesson first.</p>
+<hr />
+<h2 id="step-1-start-the-windows-server-vm">Step 1 - Start the Windows Server VM</h2>
+<p>Start the virtual machine containing the Windows Server ISO.</p>
+<p>The VM should boot into the Windows Server installation environment.</p>
+<p>Select your:</p>
+<ul>
+<li>language</li>
+<li>time and currency format</li>
+<li>keyboard layout</li>
+</ul>
+<p>Then continue to the installation screen.</p>
+<hr />
+<h2 id="step-2-choose-the-windows-server-edition">Step 2 - Choose the Windows Server Edition</h2>
+<p>Depending on the installation media, several editions may appear.</p>
+<p>For a beginner-friendly environment, choose a version that includes:</p>
+<p><strong>Desktop Experience</strong></p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Windows Server 2022 Standard Evaluation
+(Desktop Experience)
+</code></pre></div>
+<h3 id="desktop-experience-vs-server-core">Desktop Experience vs Server Core</h3>
+<p><strong>Desktop Experience</strong> provides the familiar Windows graphical interface.</p>
+<p><strong>Server Core</strong> provides a minimal installation without the traditional desktop interface and is normally administered primarily through command-line tools and remote management.</p>
+<p>For this project, Desktop Experience makes it easier to explore tools such as:</p>
+<ul>
+<li>Server Manager</li>
+<li>Active Directory Users and Computers</li>
+<li>DNS Manager</li>
+<li>Computer Management</li>
+</ul>
+<hr />
+<h2 id="step-3-choose-the-installation-type">Step 3 - Choose the Installation Type</h2>
+<p>When Windows asks which type of installation you want, choose:</p>
+<p><strong>Custom: Install Microsoft Server Operating System only</strong></p>
+<p>A custom installation is appropriate because we are creating a new server rather than upgrading an existing Windows installation.</p>
+<hr />
+<h2 id="step-4-select-the-virtual-disk">Step 4 - Select the Virtual Disk</h2>
+<p>Windows will display the virtual disk created for the VM.</p>
+<p>Select the available unallocated disk space and continue.</p>
+<p>For this learning environment, a virtual disk of approximately <strong>40-60 GB</strong> is normally sufficient.</p>
+<p>Windows will automatically create the partitions required for the operating system.</p>
+<hr />
+<h2 id="step-5-complete-the-installation">Step 5 - Complete the Installation</h2>
+<p>Windows Server will copy files and install the operating system.</p>
+<p>The virtual machine may restart several times.</p>
+<p>After installation, you will be asked to configure the built-in:</p>
+<div class="highlight"><pre><span></span><code>Administrator
+</code></pre></div>
+<p>account.</p>
+<p>Create a strong password that you can remember for the lab.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>Do not reuse real passwords from personal, university, or workplace accounts.</p>
+<p>This project should use credentials created specifically for the simulated environment.</p>
+<hr />
+<h2 id="step-6-sign-in">Step 6 - Sign In</h2>
+<p>After installation is complete, sign in using the Administrator account.</p>
+<p>You should reach the Windows Server desktop.</p>
+<p><strong>Server Manager</strong> will normally open automatically.</p>
+<p>Server Manager is one of the main administration tools used to configure Windows Server roles and features.</p>
+<hr />
+<h2 id="step-7-inspect-the-server">Step 7 - Inspect the Server</h2>
+<p>Before changing anything, inspect the current system.</p>
+<p>Open:</p>
+<p><strong>Server Manager → Local Server</strong></p>
+<p>Look for information such as:</p>
+<ul>
+<li>computer name</li>
+<li>Windows edition</li>
+<li>network adapter</li>
+<li>IP address</li>
+<li>time zone</li>
+<li>Windows Firewall status</li>
+<li>remote management status</li>
+</ul>
+<p>The objective is to understand the server's current state before configuring it.</p>
+<hr />
+<h2 id="step-8-check-the-computer-name">Step 8 - Check the Computer Name</h2>
+<p>Every computer on a network needs a hostname.</p>
+<p>You can check the current hostname from Command Prompt:</p>
+<div class="highlight"><pre><span></span><code><span class="n">hostname</span>
+</code></pre></div>
+<p>You can also use PowerShell:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$env:COMPUTERNAME</span>
+</code></pre></div>
+<p>The default hostname generated by Windows may not be very meaningful.</p>
+<p>Later, you may rename the server to something easier to recognise, such as:</p>
+<div class="highlight"><pre><span></span><code>DC01
+</code></pre></div>
+<p>This naming convention can help identify the machine as the first Domain Controller in the environment.</p>
+<hr />
+<h2 id="step-9-inspect-the-network-configuration">Step 9 - Inspect the Network Configuration</h2>
+<p>Open Command Prompt and run:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ipconfig</span>
+</code></pre></div>
+<p>Look for:</p>
+<ul>
+<li>IPv4 Address</li>
+<li>Subnet Mask</li>
+<li>Default Gateway</li>
+<li>DNS Servers</li>
+</ul>
+<p>Do not worry if the address was automatically assigned.</p>
+<p>In the next lesson, we will examine how IP addressing, DNS, DHCP and virtual networking affect communication between the Windows Server and Ubuntu machines.</p>
+<hr />
+<h2 id="step-10-check-internet-connectivity">Step 10 - Check Internet Connectivity</h2>
+<p>If your virtualisation network provides internet access, test connectivity.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ping</span> <span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">8</span>
+</code></pre></div>
+<p>You can also test DNS resolution:</p>
+<div class="highlight"><pre><span></span><code><span class="n">nslookup</span> <span class="n">microsoft</span><span class="p">.</span><span class="n">com</span>
+</code></pre></div>
+<p>These tests answer two different questions.</p>
+<p><code>ping 8.8.8.8</code> helps test basic IP connectivity.</p>
+<p><code>nslookup microsoft.com</code> helps verify that DNS name resolution is working.</p>
+<hr />
+<h2 id="optional-create-a-snapshot">Optional - Create a Snapshot</h2>
+<p>Once Windows Server is installed and working, consider creating a virtual machine snapshot.</p>
+<p>A useful snapshot name could be:</p>
+<div class="highlight"><pre><span></span><code>Windows Server Clean Install
+</code></pre></div>
+<p>This gives you a recovery point before making major configuration changes.</p>
+<hr />
+<h2 id="what-you-should-understand">What You Should Understand</h2>
+<p>Before continuing, make sure you can explain:</p>
+<p><strong>Why are we using Windows Server instead of normal Windows?</strong></p>
+<p>Windows Server provides enterprise services such as Active Directory Domain Services, DNS, centralized authentication, and server roles.</p>
+<p><strong>What is Server Manager?</strong></p>
+<p>Server Manager is an administration interface used to configure and monitor Windows Server.</p>
+<p><strong>Why do we inspect the network before configuring Active Directory?</strong></p>
+<p>Active Directory depends heavily on reliable networking and DNS.</p>
+<p>If network configuration is incorrect, authentication and directory services may fail later.</p>
+<p><strong>Why are we not configuring Active Directory yet?</strong></p>
+<p>We are separating the project into layers.</p>
+<p>First we establish the server.</p>
+<p>Then we configure networking.</p>
+<p>After networking is understood and verified, we add the identity services.</p>
+<hr />
+<h2 id="checkpoint">Checkpoint</h2>
+<p>Before moving on, confirm that:</p>
+<ul>
+<li>Windows Server boots successfully</li>
+<li>you can sign in as Administrator</li>
+<li>Server Manager opens</li>
+<li>the server has a hostname</li>
+<li>the server has an IP address</li>
+<li>you can inspect its network configuration</li>
+<li>the virtual network adapter is working</li>
+</ul>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<p>Using only the tools available inside Windows Server, find:</p>
+<ol>
+<li>your hostname</li>
+<li>your IPv4 address</li>
+<li>your default gateway</li>
+<li>your DNS server</li>
+<li>your Windows Server edition</li>
+</ol>
+<p>Try to explain what each value represents rather than simply copying it.</p>
+<hr />
+<h2 id="next-step">Next Step</h2>
+<p>The Windows Server operating system is ready.</p>
+<p>Next, we will configure the network so that Windows Server and the Ubuntu integration machine can reliably communicate.</p>
+<p><a class="md-button md-button--primary" href="../03-networking/">Continue to Networking →</a></p>
 
 
 
